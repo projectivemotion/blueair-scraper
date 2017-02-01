@@ -51,6 +51,7 @@ class FlightsContainer
                 'arrival'   =>  $arrival_date,
                 'segments'  => $segments
         ]);
+        reset($segments);    // reset internal pointer for end-user.
     }
 
     public static function decodeFlightSegments($journey)
