@@ -46,12 +46,12 @@ class FlightsContainer
         if(!isset($direction[$departure_datestr]))
             $direction[$departure_datestr]    =   [];
 
+        reset($segments);    // reset internal pointer for consistency.
         $direction[$departure_datestr][]    =   new Flight($prices +    [
                 'departure' =>  $departure_date,
                 'arrival'   =>  $arrival_date,
                 'segments'  => $segments
         ]);
-        reset($segments);    // reset internal pointer for end-user.
     }
 
     public static function decodeFlightSegments($journey)

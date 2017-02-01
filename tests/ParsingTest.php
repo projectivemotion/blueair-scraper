@@ -58,6 +58,11 @@ class ParsingTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(74.94, $ctr->outbound['2017-02-04'][0]->price_allpassengers->amount);
         $this->assertEquals('EUR', $ctr->outbound['2017-02-04'][0]->price_allpassengers->currency);
 
+        // assert internal pointer position of segments.. important for determining departure/arrival flights
+        $this->assertSame('4020', current($ctr->outbound['2017-02-04'][0]->segments)->number);
+        $this->assertSame('4008', current($ctr->inbound['2017-02-09'][0]->segments)->number);
+        // end
+
         // make sure json dates are not datetime objects
         $json   =   \json_encode($ctr);
 
