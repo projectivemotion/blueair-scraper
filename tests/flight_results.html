@@ -1,0 +1,1690 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	CAUTA ZBOR - Bilete de avion rezervari online preturi bilete de avion | Blue Air - Smart Flying
+</title><meta name="Author" content="Openmind Concept" /><meta property="og:image" content="https://open.maxitours.be/images/master/blueair-Maxi.png" /><link href="styles/SeatMap.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="styles/blueair.css" /><link rel="Stylesheet" type="text/css" href="styles/OpenBooking.css?201511030914" /><link rel="Stylesheet" type="text/css" href="styles/BookingSearch.css" /><link rel="stylesheet" type="text/css" href="styles/ajaxcalendar.css" /><link rel="stylesheet" type="text/css" href="css/blueair-theme/jquery-ui.min.css" /><link type="image/ico" href="https://www.blueairweb.com/favicon.ico" rel="shortcut icon" />
+    <script type="text/javascript" src="js/jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.numeric.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.adipopup.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/chrome.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+        OPENBOOKING = {};
+    </script>
+    <script type="text/javascript" src="js/OPENBOOKING.searchBox.js"></script>
+
+    
+    <meta property="og:title" content="Rezervari bilete Blue Air – bilete de avion ieftine." />
+    <meta property="og:description" content="Alege zborul Blue Air preferat. Cumpara bilete de avion ieftine catre Bacau, Bologna, Barcelona, Bruxelles, Bucuresti, Catania, Dublin, Larnaca, Lisabona, Londra, Madrid, Malaga, Milano, Napoli, Nisa, Paris, Roma, Sibiu, Stuttgart, Torino Cuneo, Valencia sau Venetia." />
+    <link href="styles/SelectLowFare.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/OPENBOOKING.SelectFlight.js"></script>
+    <script type="text/javascript">
+        OPENBOOKING.SelectFlight.ddlPaymentTypeClientID = 'ctl00_ContentPlaceHolder1_ddlPaymentType';
+        OPENBOOKING.SelectFlight.ckbAgreementClientID = 'ctl00_ContentPlaceHolder1_ckbAgreement';
+        OPENBOOKING.SelectFlight.lblPaymentDetailsClientID = 'ctl00_ContentPlaceHolder1_lblPaymentDetails';
+        OPENBOOKING.SelectFlight.lblBottomTotalAmountClientID = 'ctl00_ContentPlaceHolder1_lblBottomTotalAmount';
+        OPENBOOKING.SelectFlight.paymentFeeDetails = '';
+        OPENBOOKING.SelectFlight.CurrencyCode = 'EUR';
+        OPENBOOKING.SelectFlight.ChangeWithCKN_Flight = 'Ca urmare a modificarilor pe care le-ati facut, atat locul alocat in avion, cat si check-in-ul online efectuat, s-au pierdut. <br/>Daca ati achizitionat locul in avion, suma platita pentru acest serviciu va fi scazuta din totalul de plata pentru modificarea pe care o faceti acum.<br/>Va rugam ca dupa ce finalizati toate modificarile dorite, inclusiv alegerea unui loc in avion daca doriti, sa refaceti procesul de check-in online si sa tipariti cartea (cartile) de imbarcare.';
+        OPENBOOKING.SelectFlight.hfDepartureDayClientID = 'ctl00_ContentPlaceHolder1_hfDepartureDay';
+        OPENBOOKING.SelectFlight.hfDepartureJourneyClientID = 'ctl00_ContentPlaceHolder1_hfDepartureJourney';
+        OPENBOOKING.SelectFlight.hfReturnDayClientID = 'ctl00_ContentPlaceHolder1_hfReturnDay';
+        OPENBOOKING.SelectFlight.hfReturnJourneyClientID = 'ctl00_ContentPlaceHolder1_hfReturnJourney';
+
+        $(document).ready(function () {
+            OPENBOOKING.SelectFlight.onDocumentReady();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OPENBOOKING.SelectFlight.onDocumentReady);
+        });
+
+        var __stormJs = 't1.stormiq.com/dcv4/jslib/3050_6376E71D_E171_428F_A90A_F84AF9919255.js';
+    </script>
+    <script type="text/javascript" src="js/ConradAdvertising/track.js"></script>
+
+        <script type="text/javascript" src="js/jquery/datepicker-ro-RO.js"></script>
+        <script type="text/javascript">
+            var styleToSelect;
+            function onOk() {
+                $get('Paragraph1').className = styleToSelect;
+            }
+
+            function setSearchButtonFocus() {
+                document.getElementById('ctl00_btnSearch').focus();
+            }
+
+            function GetEnter(e) {
+                var keycode;
+
+                if (window.event) keycode = window.event.keyCode;
+                else if (e) keycode = e.which;
+
+                if (keycode == 13) //enter
+                {
+                    StripHTMLFromSearchText();
+                    document.getElementById('ctl00_btnSearch').focus();
+                    return false;
+                }
+            }
+
+            function StripHTMLFromSearchText() {
+                var txtSearch = document.getElementById('ctl00_txtSearch');
+                txtSearch.value = txtSearch.value.stripHTML();
+                txtSearch.value = txtSearch.value.replace(/'/g, "");
+                txtSearch.value = txtSearch.value.replace(/"/g, "");
+                txtSearch.value = txtSearch.value.replace(/</g, "");
+                txtSearch.value = txtSearch.value.replace(/>/g, "");
+            }
+
+            String.prototype.stripHTML = function () {
+                // What a tag looks like
+                var matchTag = /<(?:.|\s)*?>/g;
+                // Replace the tag
+                return this.replace(matchTag, "");
+            };
+
+            $(document).ready(function () {
+                $(".languages span:first").html($(".flags div.ro-RO").next("span").html());
+            });
+        </script>
+    
+    <script type="text/javascript" charset="utf-8" src="//inpref.s3.amazonaws.com/frosmo.easy.js"></script>
+    <script type="text/javascript" charset="utf-8" src="//inpref.s3.amazonaws.com/sites/fd3d50363c4f429351a52b32cf8f23cc.js"></script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-11789568-1', 'auto'); ga('send', 'pageview');
+    </script>
+
+<meta name="Keywords" /><meta name="Description" content="rezervari, bilete de avion, Franta, Germania, Anglia, Italia, Spania, Belgia, Cipru, Grecia, Germania, Portugalia, Charter, Cargo, Corporate, aeroambulanta, ghid calatorie, curse avion, bilete ieftine, bilete accesibile, destinatii , disponibilitate zboruri, agentii  - Blue Air - Smart Flying" /></head>
+<body onload="autoScroll('newsslider','newssection',5,true)">
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WJKZQK" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script type="text/javascript">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WJKZQK');
+
+    </script>
+
+    <form name="aspnetForm" method="post" action="./SelectLowFare.aspx" id="aspnetForm" style="background-image: url(&#39;images/master/background_banda.jpg&#39;); background-repeat: repeat-x; background-color: #e3e3e3;">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM1MjU5MjcxMg9kFgJmD2QWAgIBD2QWGgIBDw8WAh4LTmF2aWdhdGVVcmwFDn4vRGVmYXVsdC5hc3B4ZGQCBA9kFgJmD2QWAgIBDxYCHgtfIUl0ZW1Db3VudGZkAgcPZBZGAgEPDxYEHwAFJ2h0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vUHJpbWEtUGFnaW5hLx4GVGFyZ2V0BQRfdG9wZGQCBQ8PFgQfAAU4aHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9EZXN0aW5hdGlpL0hhcnRhLURlc3RpbmF0aWlsb3IfAgUEX3RvcGRkAgcPDxYEHwAFMWh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vRGVzdGluYXRpaS9PcmFyLURlLVpib3IfAgUEX3RvcGRkAgkPDxYEHwAFPmh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vRGVzdGluYXRpaS9EZXN0aW5hdGlpLVNpLUFlcm9wb3J0dXJpHwIFBF90b3BkZAILDw8WAh8ABSNodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL2RkAg0PDxYEHwAFMmh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vU2VydmljaWkvTG91bmdlLVByb3RvY29sHwIFBF90b3BkZAIPDw8WBB8ABTFodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL1JlemVydmFyaS1HcnVwHwIFBF90b3BkZAIRDw8WBB8ABSpodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL0NoYXJ0ZXIfAgUEX3RvcGRkAhMPDxYCHwAFLmh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vU2VydmljaWkvQmx1ZS1CaXN0cm9kZAIVDw8WBB8ABShodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL0NhcmdvHwIFBF90b3BkZAIXDw8WBB8ABStodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL0UtQm9yZGVyHwIFBF90b3BkZAIbDw8WBB8ABS5odHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL1B1YmxpY2l0YXRlHwIFBF90b3BkZAIdDw8WAh8ABS1odHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL0UtU2VydmljZXNkZAIfDw8WAh8ABTNodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1NlcnZpY2lpL1RyYW5zZmVyLUF1dG9jYXJkZAIhDw8WBB8ABSxodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0NvcnBvcmF0ZS9Db250LU5vdR8CBQRfdG9wZGQCIw8PFgQfAAUnaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9BZ2VudGllL0luZGV4HwIFBF90b3BkZAInDw8WBB8ABTtodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0luZm9ybWF0aWktVXRpbGUvVWx0aW1lbGUtTm91dGF0aR8CBQRfdG9wZGQCKQ8PFgQfAAU4aHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9JbmZvcm1hdGlpLVV0aWxlL1ZvdWNoZXItQ2Fkb3UfAgUEX3RvcGRkAisPDxYEHwAFKWh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vSXN0b3JpYy1PZmVydGUvHwIFBF90b3BkZAItDw8WBB8ABTxodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0luZm9ybWF0aWktVXRpbGUvR2hpZC1EZS1DYWxhdG9yaWUfAgUEX3RvcGRkAi8PDxYEHwAFMGh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vQ29uZGl0aWktRGUtQ2FsYXRvcmllLx8CBQRfdG9wZGQCMQ8PFgQfAAU2aHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9JbmZvcm1hdGlpLVV0aWxlL0NhbGwtQ2VudGVyHwIFBF90b3BkZAIzDw8WBB8ABTVodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0luZm9ybWF0aWktVXRpbGUvTmV3c2xldHRlch8CBQRfdG9wZGQCNQ8PFgQfAAU9aHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9JbmZvcm1hdGlpLVV0aWxlL0FzaXN0ZW50YS1zcGVjaWFsYR8CBQRfdG9wZGQCOQ8PFgQfAAUtaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9Db21wYW5pZS9EZXNwcmUtTm9pHwIFBF90b3BkZAI7Dw8WBB8ABStodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0NvbXBhbmllL0VjaGlwYWplHwIFBF90b3BkZAI9Dw8WBB8ABShodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0NvbXBhbmllL0Zsb3RhHwIFBF90b3BkZAI/Dw8WBB8ABSxodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0NvbXBhbmllL1NpZ3VyYW50YR8CBQRfdG9wZGQCQQ8PFgQfAAUiaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9DYXJpZXJlLx8CBQRfdG9wZGQCQw8PFgQfAAU+aHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9JbmZvcm1hdGlpLVV0aWxlL0NvbXVuaWNhdGUtRGUtUHJlc2EfAgUEX3RvcGRkAkUPDxYEHwAFJWh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vQ29udGFjdC1yby8fAgUEX3RvcGRkAkcPDxYCHwAFKWh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vL0NvbXBhbmllL1N0YWZmZGQCSQ8PFgQfAAUzaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9Db21wYW5pZS9SZXZpc3RhLUluZmxpZ2h0HwIFBF90b3BkZAJLDw8WBB8CBQZfYmxhbmsfAAUgaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9yc3Mtcm9kZAJNDw8WAh8ABTdodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0luZm9ybWF0aWktVXRpbGUvQ2FzZXRhLVN0aXJpZGQCCA9kFgxmD2QWAmYPZBYEAgEPDxYGHg5GbGV4aWJsZURheXNObwICHgpfcm91bmR0cmlwZx4TUm91dGVzUm91bmR0cmlwT25seQU/TENBLUJHV3xCR1ctTENBfExDQS1FQkx8RUJMLUxDQXxUUk4tTUFIfE1BSC1UUk58VFJOLVBNSXxQTUktVFJOZBYUAgMPEA8WBh4ORGF0YVZhbHVlRmllbGQFBElBVEEeDURhdGFUZXh0RmllbGQFBE5hbWUeC18hRGF0YUJvdW5kZ2QQFTYNU2VsZWN0ZWF6YS4uLipCcnV4ZWxsZXMgLSBCcnV4ZWxsZXMgQWlycG9ydCAtIFRlcm1pbmFsIEIZTGFybmFjYSAtIExhcm5hY2EgQWlycG9ydB5Db3BlbmhhZ2EgLSBDb3BlbmhhZ2VuIEFpcnBvcnQbQm9yZGVhdXggLSBCb3JkZWF1eCBBaXJwb3J0H0x5b24gLSBTdC4gRXh1cGVyeSAoVGVybWluYWwgMSkgTmlzYSAtIEPDtHRlIGQnQXp1ciAtIFRlcm1pbmFsIDEbUGFyaXMgKEJlYXV2YWlzKSAtIEJlYXV2YWlzDkJlcmxpbiAtIFRlZ2VsJ0hhbWJ1cmcgLSBBZXJvcG9ydCBIYW1idXJnIChUZXJtaW5hbCAyKR1Lb2xuIC0gS29sbiBCb25uIC0gVGVybWluYWwgMipTdHV0dGdhcnQgLSBTdHV0dGdhcnQgQWlycG9ydCAoVGVybWluYWwgMykkQXRlbmEgLSBBdGhlbnMgSW50ZXJuYXRpb25hbCBBaXJwb3J0NlNhbG9uaWMgLSBUaGVzc2Fsb25pa2kgTWFjZWRvbmlhIEludGVybmF0aW9uYWwgQWlycG9ydCREdWJsaW4gLSBEdWJsaW4gQWlycG9ydCAtIFRlcm1pbmFsIDEqVGVsIEF2aXYgLSBCZW4gR3VyaW9uIEFpcnBvcnQgLSBUZXJtaW5hbCAzGkFsZ2hlcm8gLSBBbGdoZXJvIEZlcnRpbGlhFEJhcmkgLSBBZXJvcG9ydCBCYXJpEUJvbG9nbmEgLSBNYXJjb25pFkNhdGFuaWEgLSBGb250YW5hcm9zc2ETRmxvcmVudGEgLSBQZXJldG9sYShMYW1lemlhIFRlcm1lIC0gQWVyb3BvcnR1bCBMYW1lemlhIFRlcm1lEU1pbGFubyAtIE1hbHBlbnNhIE1pbGFubyAoQmVyZ2FtbykgLSBPcmlvIGFsIFNlcmlvGE1pbGFubyAoTGluYXRlKSAtIExpbmF0ZRdOYXBvbGkgLSBOYXBvbGkgQWlycG9ydBFQZXNjYXJhIC0gQWJydXp6bxtSb21hIC0gRml1bWljaW5vIFRlcm1pbmFsIDIQVG9yaW5vIC0gQ2FzZWxsZR9CaXJtaW5naGFtIC0gQmlybWluZ2hhbSBBaXJwb3J0NEdsYXNnb3cgLSBHbGFzZ293IEludGVybmF0aW9uYWwgQWlycG9ydCAoVGVybWluYWwgMSkfTGl2ZXJwb29sIC0gSm9obiBMZW5ub24gQWlycG9ydBZMb25kcmEgKEx1dG9uKSAtIEx1dG9uJkxpc2Fib25hIC0gTGlzYm9uIEFpcnBvcnQgKFRlcm1pbmFsIDIpHUJhY2F1IC0gR2VvcmdlIEVuZXNjdSBBaXJwb3J0G0JyYXNvdiAtIHRyYW5zZmVyIC0gYXV0b2NhchNCdWN1cmVzdGkgLSBPdG9wZW5pIUNsdWotTmFwb2NhIC0gQXZyYW0gSWFuY3UgQWlycG9ydB9Db25zdGFudGEgLSBNaWhhaWwgS29nYWxuaWNlYW51HkNvbnN0YW50YSAtIHRyYW5zZmVyIC0gYXV0b2NhchRJYXNpIC0gQWVyb3BvcnQgSWFzaQ9PcmFkZWEgLSBPcmFkZWENU2liaXUgLSBTaWJpdRdUaW1pc29hcmEgLSBUcmFpYW4gVnVpYRtBbGljYW50ZSAtIEFMSUNBTlRFIEFJUlBPUlQgQmFyY2Vsb25hIC0gRWwgUHJhdCAtIFRlcm1pbmFsIDIpQ2FzdGVsbG9uIC0gQ2FzdGVsbG9uIERlIExhIFBsYW5hIEFpcnBvcnQNSWJpemEgLSBJYml6YRtNYWRyaWQgLSBCYXJhamFzIFRlcm1pbmFsIDEkTWFsYWdhIC0gTWFsYWdhIEFpcnBvcnQgLSBUZXJtaW5hbCAyLVBhbG1hIGRlIE1hbGxvcmNhIC0gUGFsbWEgZGUgTWFsbG9yY2EgQWlycG9ydBlTZXZpbGxhIC0gU2V2aWxsYSBBaXJwb3J0H1ZhbGVuY2lhIC0gTWFuaXNlcyAtIFRlcm1pbmFsIDIyU3RvY2tob2xtIC0gU3RvY2tob2xtIEFybGFuZGEgQWlycG9ydCAoVGVybWluYWwgNSkVNgItMQNCUlUDTENBA0NQSANCT0QDTFlTA05DRQNCVkEDVFhMA0hBTQNDR04DU1RSA0FUSANTS0cDRFVCA1RMVgNBSE8DQlJJA0JMUQNDVEEDRkxSA1NVRgNNWFADQkdZA0xJTgNOQVADUFNSA0ZDTwNUUk4DQkhYA0dMQQNMUEwDTFROA0xJUwNCQ00DWEhWA09UUANDTEoDQ01EA0NORANJQVMDT01SA1NCWgNUU1IDQUxDA0JDTgNDRFQDSUJaA01BRANBR1ADUE1JA1NWUQNWTEMDQVJOFCsDNmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBZmQCBw8QDxYGHwYFBElBVEEfBwUETmFtZR8IZ2QQFTYNU2VsZWN0ZWF6YS4uLhpBbGdoZXJvIC0gQWxnaGVybyBGZXJ0aWxpYRtBbGljYW50ZSAtIEFMSUNBTlRFIEFJUlBPUlQkQXRlbmEgLSBBdGhlbnMgSW50ZXJuYXRpb25hbCBBaXJwb3J0HUJhY2F1IC0gR2VvcmdlIEVuZXNjdSBBaXJwb3J0IEJhcmNlbG9uYSAtIEVsIFByYXQgLSBUZXJtaW5hbCAyFEJhcmkgLSBBZXJvcG9ydCBCYXJpDkJlcmxpbiAtIFRlZ2VsH0Jpcm1pbmdoYW0gLSBCaXJtaW5naGFtIEFpcnBvcnQRQm9sb2duYSAtIE1hcmNvbmkbQm9yZGVhdXggLSBCb3JkZWF1eCBBaXJwb3J0G0JyYXNvdiAtIHRyYW5zZmVyIC0gYXV0b2NhcipCcnV4ZWxsZXMgLSBCcnV4ZWxsZXMgQWlycG9ydCAtIFRlcm1pbmFsIEITQnVjdXJlc3RpIC0gT3RvcGVuaSlDYXN0ZWxsb24gLSBDYXN0ZWxsb24gRGUgTGEgUGxhbmEgQWlycG9ydBZDYXRhbmlhIC0gRm9udGFuYXJvc3NhIUNsdWotTmFwb2NhIC0gQXZyYW0gSWFuY3UgQWlycG9ydB9Db25zdGFudGEgLSBNaWhhaWwgS29nYWxuaWNlYW51HkNvbnN0YW50YSAtIHRyYW5zZmVyIC0gYXV0b2Nhch5Db3BlbmhhZ2EgLSBDb3BlbmhhZ2VuIEFpcnBvcnQkRHVibGluIC0gRHVibGluIEFpcnBvcnQgLSBUZXJtaW5hbCAxE0Zsb3JlbnRhIC0gUGVyZXRvbGE0R2xhc2dvdyAtIEdsYXNnb3cgSW50ZXJuYXRpb25hbCBBaXJwb3J0IChUZXJtaW5hbCAxKSdIYW1idXJnIC0gQWVyb3BvcnQgSGFtYnVyZyAoVGVybWluYWwgMikUSWFzaSAtIEFlcm9wb3J0IElhc2kNSWJpemEgLSBJYml6YR1Lb2xuIC0gS29sbiBCb25uIC0gVGVybWluYWwgMihMYW1lemlhIFRlcm1lIC0gQWVyb3BvcnR1bCBMYW1lemlhIFRlcm1lGUxhcm5hY2EgLSBMYXJuYWNhIEFpcnBvcnQmTGlzYWJvbmEgLSBMaXNib24gQWlycG9ydCAoVGVybWluYWwgMikfTGl2ZXJwb29sIC0gSm9obiBMZW5ub24gQWlycG9ydBZMb25kcmEgKEx1dG9uKSAtIEx1dG9uH0x5b24gLSBTdC4gRXh1cGVyeSAoVGVybWluYWwgMSkbTWFkcmlkIC0gQmFyYWphcyBUZXJtaW5hbCAxJE1hbGFnYSAtIE1hbGFnYSBBaXJwb3J0IC0gVGVybWluYWwgMhFNaWxhbm8gLSBNYWxwZW5zYSBNaWxhbm8gKEJlcmdhbW8pIC0gT3JpbyBhbCBTZXJpbxhNaWxhbm8gKExpbmF0ZSkgLSBMaW5hdGUXTmFwb2xpIC0gTmFwb2xpIEFpcnBvcnQgTmlzYSAtIEPDtHRlIGQnQXp1ciAtIFRlcm1pbmFsIDEPT3JhZGVhIC0gT3JhZGVhLVBhbG1hIGRlIE1hbGxvcmNhIC0gUGFsbWEgZGUgTWFsbG9yY2EgQWlycG9ydBtQYXJpcyAoQmVhdXZhaXMpIC0gQmVhdXZhaXMRUGVzY2FyYSAtIEFicnV6em8bUm9tYSAtIEZpdW1pY2lubyBUZXJtaW5hbCAyNlNhbG9uaWMgLSBUaGVzc2Fsb25pa2kgTWFjZWRvbmlhIEludGVybmF0aW9uYWwgQWlycG9ydBlTZXZpbGxhIC0gU2V2aWxsYSBBaXJwb3J0DVNpYml1IC0gU2liaXUyU3RvY2tob2xtIC0gU3RvY2tob2xtIEFybGFuZGEgQWlycG9ydCAoVGVybWluYWwgNSkqU3R1dHRnYXJ0IC0gU3R1dHRnYXJ0IEFpcnBvcnQgKFRlcm1pbmFsIDMpKlRlbCBBdml2IC0gQmVuIEd1cmlvbiBBaXJwb3J0IC0gVGVybWluYWwgMxdUaW1pc29hcmEgLSBUcmFpYW4gVnVpYRBUb3Jpbm8gLSBDYXNlbGxlH1ZhbGVuY2lhIC0gTWFuaXNlcyAtIFRlcm1pbmFsIDIVNgItMQNBSE8DQUxDA0FUSANCQ00DQkNOA0JSSQNUWEwDQkhYA0JMUQNCT0QDWEhWA0JSVQNPVFADQ0RUA0NUQQNDTEoDQ01EA0NORANDUEgDRFVCA0ZMUgNHTEEDSEFNA0lBUwNJQloDQ0dOA1NVRgNMQ0EDTElTA0xQTANMVE4DTFlTA01BRANBR1ADTVhQA0JHWQNMSU4DTkFQA05DRQNPTVIDUE1JA0JWQQNQU1IDRkNPA1NLRwNTVlEDU0JaA0FSTgNTVFIDVExWA1RTUgNUUk4DVkxDFCsDNmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBZmQCDA8PZBYCHgVzdHlsZQUOZGlzcGxheTpibG9jaztkAg0PEGQPFgpmAgECAgIDAgQCBQIGAgcCCAIJFgoQBQExBQExZxAFATIFATJnEAUBMwUBM2cQBQE0BQE0ZxAFATUFATVnEAUBNgUBNmcQBQE3BQE3ZxAFATgFAThnEAUBOQUBOWcQBQIxMAUCMTBnZGQCDg8QZA8WBmYCAQICAgMCBAIFFgYQBQEwBQEwZxAFATEFATFnEAUBMgUBMmcQBQEzBQEzZxAFATQFATRnEAUBNQUBNWdkZAIQDxBkDxYGZgIBAgICAwIEAgUWBhAFATAFATBnEAUBMQUBMWcQBQEyBQEyZxAFATMFATNnEAUBNAUBNGcQBQE1BQE1Z2RkAhMPDxYCHwAFLmh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vVGVybWVuaS1TaS1Db25kaXRpaS9kZAIbDw8WAh8ABTBodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL09ubGluZS1yby9Ib3RlbC1Ib3N0ZWxkZAIcDw8WAh8ABTRodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL09ubGluZS1yby9SZXplcnZhcmUtTWFzaW5hZGQCHQ8PFgIfAAUgaHR0cDovL2JsdWVhaXIucGFya3ZpYS5jb20vcm8tUk9kZAIFD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlaGRkAgEPZBYGZg8PFgQeCENzc0NsYXNzBRVCb29raW5nSGVhZGVySW1hZ2UgaTEeBF8hU0ICAmRkAgIPDxYCHgRUZXh0BQ9TZWxlY3RlYXphIHpib3JkZAIED2QWDAIBDw8WAh4NT25DbGllbnRDbGljawUNcmV0dXJuIGZhbHNlO2RkAgMPDxYGHwsFD3RhYiBpMSBzZWxlY3RlZB8OBQ1yZXR1cm4gZmFsc2U7HwwCAmRkAgUPDxYCHw4FDXJldHVybiBmYWxzZTtkZAIHDw8WAh8OBQ1yZXR1cm4gZmFsc2U7ZGQCCQ8PFgIfDgUNcmV0dXJuIGZhbHNlO2RkAgsPDxYCHw4FDXJldHVybiBmYWxzZTtkZAICD2QWAmYPZBYCAgEPFgIfAQICFgRmD2QWDGYPFQEBMGQCAQ8PFgIfDQUHUGxlY2FyZWRkAgMPDxYCHw0FDkJlcmxpbiAtIFRlZ2VsZGQCBQ8PFgIfDQUbUm9tYSAtIEZpdW1pY2lubyBUZXJtaW5hbCAyZGQCBw8WAh8BAgUWDmYPZBYCAgEPDxYCHgtDb21tYW5kTmFtZQUJZGVwYXJ0dXJlZGQCAQ9kFgRmDxQrAgdlBQowMi4wMi4yMDE3ZAUCam8FCjAyLjAyLjIwMTcFDGRpc3BsYXk6bm9uZQUFLTEsMDBkAgEPFQIMZGlzcGxheTpub25lAGQCAg9kFgRmDxQrAgdlBQowMy4wMi4yMDE3ZAUCdmkFCjAzLjAyLjIwMTcFDGRpc3BsYXk6bm9uZQUFLTEsMDBkAgEPFQIMZGlzcGxheTpub25lAGQCAw9kFgRmDxUHDHNlbGVjdGVkLWRheQowNC4wMi4yMDE3bTBCfjQwMjB+IH5+VFhMfjAyLzA0LzIwMTcgMTA6MTB+VFJOfjAyLzA0LzIwMTcgMTE6NTB+fl4wQn40MTA3fiB+flRSTn4wMi8wNC8yMDE3IDE2OjMwfkZDT34wMi8wNC8yMDE3IDE3OjQ1fn4Dc8OiCjA0LjAyLjIwMTcABTc0LDk0ZAIBDxUCDGRpc3BsYXk6bm9uZQxkaXNwbGF5Om5vbmVkAgQPZBYEZg8UKwIHZQUKMDUuMDIuMjAxN2QFAmR1BQowNS4wMi4yMDE3BQxkaXNwbGF5Om5vbmUFBS0xLDAwZAIBDxUCDGRpc3BsYXk6bm9uZQBkAgUPZBYEZg8UKwIHZQUKMDYuMDIuMjAxN2QFAmx1BQowNi4wMi4yMDE3BQxkaXNwbGF5Om5vbmUFBS0xLDAwZAIBDxUCDGRpc3BsYXk6bm9uZQBkAgYPZBYCAgEPDxYCHw8FCWRlcGFydHVyZWRkAgkPFgIfAQIFFgpmD2QWBGYPFQIOZGlzcGxheTogbm9uZTsKMDIuMDIuMjAxN2QCAQ8WAh8BZmQCAQ9kFgRmDxUCDmRpc3BsYXk6IG5vbmU7CjAzLjAyLjIwMTdkAgEPFgIfAWZkAgIPZBYEZg8VAgAKMDQuMDIuMjAxN2QCAQ8WAh8BAgEWAmYPZBYQZg8VAgBtMEJ+NDAyMH4gfn5UWEx+MDIvMDQvMjAxNyAxMDoxMH5UUk5+MDIvMDQvMjAxNyAxMTo1MH5+XjBCfjQxMDd+IH5+VFJOfjAyLzA0LzIwMTcgMTY6MzB+RkNPfjAyLzA0LzIwMTcgMTc6NDV+fmQCAQ8WAh8BAgEWAmYPZBYCZg8VAQIwQmQCAg8VCAAGQmVybGluBTEwOjEwBFJvbWEFMTc6NDUBMQY3aCAzNW0AZAIDDw8WAh8KaGRkAgQPFQEFNzQsOTRkAgUPFQEFNzQsOTRkAgYPFQEAZAIHDxYCHwECAhYEZg9kFghmDxUHAjBCBzBCIDQwMjAGQmVybGluBTEwOjEwF2ltYWdlcy9sYXlvdXQvcGxhbmUucG5nBlRvcmlubwUxMTo1MGQCAQ8VAQYxaCA0MG1kAgIPFQIDNzM0AGQCAw8VAQY0aCA0MG1kAgEPZBYIZg8VBwIwQgcwQiA0MTA3BlRvcmlubwUxNjozMBdpbWFnZXMvbGF5b3V0L3BsYW5lLnBuZwRSb21hBTE3OjQ1ZAIBDxUBBjFoIDE1bWQCAg8VAgM3MzUOZGlzcGxheTogbm9uZTtkAgMPFQEAZAIDD2QWBGYPFQIOZGlzcGxheTogbm9uZTsKMDUuMDIuMjAxN2QCAQ8WAh8BZmQCBA9kFgRmDxUCDmRpc3BsYXk6IG5vbmU7CjA2LjAyLjIwMTdkAgEPFgIfAWZkAgEPZBYMZg8VAQExZAIBDw8WAh8NBQpJbnRvYXJjZXJlZGQCAw8PFgIfDQUbUm9tYSAtIEZpdW1pY2lubyBUZXJtaW5hbCAyZGQCBQ8PFgIfDQUOQmVybGluIC0gVGVnZWxkZAIHDxYCHwECBRYOZg9kFgICAQ8PFgIfDwUGcmV0dXJuZGQCAQ9kFgRmDxUHAAowOS4wMi4yMDE3bTBCfjQwMDh+IH5+RkNPfjAyLzA5LzIwMTcgMTA6NTB+VFJOfjAyLzA5LzIwMTcgMTI6MDV+fl4wQn40MDE5fiB+flRSTn4wMi8wOS8yMDE3IDEzOjE1flRYTH4wMi8wOS8yMDE3IDE0OjU1fn4Cam8KMDkuMDIuMjAxNwAFNTQsOTRkAgEPFQIMZGlzcGxheTpub25lDGRpc3BsYXk6bm9uZWQCAg9kFgRmDxQrAgdlBQoxMC4wMi4yMDE3ZAUCdmkFCjEwLjAyLjIwMTcFDGRpc3BsYXk6bm9uZQUFLTEsMDBkAgEPFQIMZGlzcGxheTpub25lAGQCAw9kFgRmDxQrAgcFDHNlbGVjdGVkLWRheQUKMTEuMDIuMjAxN2QFA3PDogUKMTEuMDIuMjAxNwUMZGlzcGxheTpub25lBQUtMSwwMGQCAQ8VAgxkaXNwbGF5Om5vbmUAZAIED2QWBGYPFCsCB2UFCjEyLjAyLjIwMTdkBQJkdQUKMTIuMDIuMjAxNwUMZGlzcGxheTpub25lBQUtMSwwMGQCAQ8VAgxkaXNwbGF5Om5vbmUAZAIFD2QWBGYPFCsCB2UFCjEzLjAyLjIwMTdkBQJsdQUKMTMuMDIuMjAxNwUMZGlzcGxheTpub25lBQUtMSwwMGQCAQ8VAgxkaXNwbGF5Om5vbmUAZAIGD2QWAgIBDw8WAh8PBQZyZXR1cm5kZAIJDxYCHwECBRYKZg9kFgRmDxUCDmRpc3BsYXk6IG5vbmU7CjA5LjAyLjIwMTdkAgEPFgIfAQIBFgJmD2QWEGYPFQIAbTBCfjQwMDh+IH5+RkNPfjAyLzA5LzIwMTcgMTA6NTB+VFJOfjAyLzA5LzIwMTcgMTI6MDV+fl4wQn40MDE5fiB+flRSTn4wMi8wOS8yMDE3IDEzOjE1flRYTH4wMi8wOS8yMDE3IDE0OjU1fn5kAgEPFgIfAQIBFgJmD2QWAmYPFQECMEJkAgIPFQgABFJvbWEFMTA6NTAGQmVybGluBTE0OjU1ATEFNGggNW0AZAIDDw8WAh8KaGRkAgQPFQEFNTQsOTRkAgUPFQEFNTQsOTRkAgYPFQEAZAIHDxYCHwECAhYEZg9kFghmDxUHAjBCBzBCIDQwMDgEUm9tYQUxMDo1MBdpbWFnZXMvbGF5b3V0L3BsYW5lLnBuZwZUb3Jpbm8FMTI6MDVkAgEPFQEGMWggMTVtZAICDxUCAzczNQBkAgMPFQEGMWggMTBtZAIBD2QWCGYPFQcCMEIHMEIgNDAxOQZUb3Jpbm8FMTM6MTUXaW1hZ2VzL2xheW91dC9wbGFuZS5wbmcGQmVybGluBTE0OjU1ZAIBDxUBBjFoIDQwbWQCAg8VAgM3MzUOZGlzcGxheTogbm9uZTtkAgMPFQEAZAIBD2QWBGYPFQIOZGlzcGxheTogbm9uZTsKMTAuMDIuMjAxN2QCAQ8WAh8BZmQCAg9kFgRmDxUCAAoxMS4wMi4yMDE3ZAIBDxYCHwFmZAIDD2QWBGYPFQIOZGlzcGxheTogbm9uZTsKMTIuMDIuMjAxN2QCAQ8WAh8BZmQCBA9kFgRmDxUCDmRpc3BsYXk6IG5vbmU7CjEzLjAyLjIwMTdkAgEPFgIfAWZkAgQPEGQQFQcNU2VsZWN0ZWF6YS4uLhRDYXJkIFZpc2EgKDAuMDAgRVVSKRpDYXJkIE1hc3RlckNhcmQgKDAuMDAgRVVSKRdDYXJkIE1hZXN0cm8gKDAuMDAgRVVSKSZDYXJkIEJhbmNvbnRhY3QvTWlzdGVyIENhc2ggKDAuMDAgRVVSKRFQYXlQYWwgKDAuMDAgRVVSKRdDYXJkIEF2YW50YWogKDAuMDAgRVVSKRUHAi0xA0NQMQNDUDMDQ1AyA0NQNAJQTAJBVhQrAwdnZ2dnZ2dnZGQCDQ8WAh8BAgIWBGYPZBYCZg8VAQEwZAIBD2QWAmYPFQEBMWQCDg9kFgRmDw8WAh8NBeoCPHA+UHJldHVpbSBpbmZvcm1hcmVhIGNsaWVudGlsb3Igbm9zdHJpLiBEZSBhY2VlYSwgaW5kaWZlcmVudCBkZSBuZWxhbXVyaXJlYSBwZSBjYXJlIG8gYWksIGFwZWxlYXphIG5vbi1zdG9wIENhbGwgQ2VudGVyLXVsIG5vc3RydS48YnIgLz5MaXN0YSBjb21wbGV0YSBhIG51bWVyZWxvciBkZSBDYWxsIENlbnRlciBlc3RlIGRpc3BvbmliaWxhIDxhIGhyZWY9Ii4uLy4uL0luZm9ybWF0aWktVXRpbGUvQ2FsbC1DZW50ZXIiPmFpY2k8L2E+PGJyIC8+PGJyIC8+TmUgcHV0ZXRpIGNvbnRhY3RhIGdyYXR1aXQgY29tcGxldGFuZCA8YSBocmVmPSIuLi8uLi9Db250YWN0LXJvLyI+YWNlc3QgZm9ybXVsYXI8L2E+LjxiciAvPjxiciAvPjwvcD5kZAICDw8WAh8NBdAUPHA+VHJhbnphY3RpaWxlIGluIEVVUiwgVVNELCBHQlAgZWZlY3R1YXRlIHBlIG9wZW4ubWF4aXRvdXJzLmJlIHN1bnQgc2VjdXJpemF0ZSBkZSBjYXRyZSBzaXN0ZW11bCBkZSBwbGF0aSBJbmdlbmljbyAoPGEgaHJlZj0iaHR0cDovL3d3dy5wYXltZW50LXNlcnZpY2VzLmluZ2VuaWNvLmNvbS8iIHRhcmdldD0iX2JsYW5rIj48c3Ryb25nPnd3dy5wYXltZW50LXNlcnZpY2VzLmluZ2VuaWNvLmNvbTwvc3Ryb25nPjwvYT4pLiBUb2F0ZSBpbmZvcm1hdGlpbGUgc2NoaW1iYXRlIHBlbnRydSBhIHByb2Nlc2EgcGxhdGEgc3VudCBjcmlwdGF0ZSBmb2xvc2luZCBwcm90b2NvbHVsIFNTTC4gQWNlc3RlIGRhdGUgbnUgcG90IGZpIGRldGVjdGF0ZSwgaW50ZXJjZXB0YXRlIHNhdSBmb2xvc2l0ZSBkZSBjYXRyZSB0ZXJ0aSBzaSBudSBzdW50IHBhc3RyYXRlIGluIHNpc3RlbWVsZSBub2FzdHJlIGluZm9ybWF0aWNlLjxiciAvPkluZ2VuaWNvIGVzdGUgdW4gZnVybml6b3IgZGUgc2VydmljaWkgdGVobmljZSBzaSBudSBzZSBvY3VwYSBkZSBsaXRpZ2lpbGUgbGVnYXRlIGRlIGNvbWVuemkuIEFjZXN0ZWEgdHJlYnVpZSBzYSBmaWUgcmV6b2x2YXRlIGRpcmVjdCBjdSBvcGVuLm1heGl0b3Vycy5iZSBzaS8gc2F1IGJhbmNhIGR1bW5lYXZvYXN0cmEuPGJyIC8+TWFpIG11bHRlIGluZm9ybWF0aWkgZGVzcHJlIEluZ2VuaWNvOiZuYnNwOzxhIGhyZWY9Imh0dHA6Ly93d3cucGF5bWVudC1zZXJ2aWNlcy5pbmdlbmljby5jb20vIiB0YXJnZXQ9Il9ibGFuayI+PHN0cm9uZz53d3cucGF5bWVudC1zZXJ2aWNlcy5pbmdlbmljby5jb208L3N0cm9uZz48L2E+PC9wPjxwPiZuYnNwOzwvcD48cD48aW1nIHN0eWxlPSJmbG9hdDogbGVmdDsgaGVpZ2h0OiAxNXB4OyBtYXJnaW4tcmlnaHQ6IDEwcHg7IiBzcmM9ImltYWdlcy9sb2dvX3BheXUucG5nIiBib3JkZXI9IjAiIGFsdD0iIiAvPlRyYW56YWN0aWlsZSBpbiBST04gZWZlY3R1YXRlIHBlIG9wZW4ubWF4aXRvdXJzLmJlIHN1bnQgc2VjdXJpemF0ZSBkZSBjYXRyZSBzaXN0ZW11bCBkZSBwbGF0aSBQYXlVICg8YSBocmVmPSJodHRwOi8vd3d3LnBheXUucm8iIHRhcmdldD0iX2JsYW5rIj48c3Ryb25nPnd3dy5wYXl1LnJvPC9zdHJvbmc+PC9hPikuIFRvYXRlIGluZm9ybWF0aWlsZSBzY2hpbWJhdGUgcGVudHJ1IGEgcHJvY2VzYSBwbGF0YSBzdW50IGNyaXB0YXRlIGZvbG9zaW5kIHByb3RvY29sdWwgU1NMLiBBY2VzdGUgZGF0ZSBudSBwb3QgZmkgZGV0ZWN0YXRlLCBpbnRlcmNlcHRhdGUgc2F1IGZvbG9zaXRlIGRlIGNhdHJlIHRlcnRpIHNpIG51IHN1bnQgcGFzdHJhdGUgaW4gc2lzdGVtZWxlIG5vYXN0cmUgaW5mb3JtYXRpY2UuPGJyIC8+UGF5VSBlc3RlIHVuIGZ1cm5pem9yIGRlIHNlcnZpY2lpIHRlaG5pY2Ugc2kgbnUgc2Ugb2N1cGEgZGUgbGl0aWdpaWxlIGxlZ2F0ZSBkZSBjb21lbnppLiBBY2VzdGVhIHRyZWJ1aWUgc2EgZmllIHJlem9sdmF0ZSBkaXJlY3QgY3Ugb3Blbi5tYXhpdG91cnMuYmUgc2kvIHNhdSBiYW5jYSBkdW1uZWF2b2FzdHJhLjxiciAvPk1haSBtdWx0ZSBpbmZvcm1hdGlpIGRlc3ByZSBQYXlVOiZuYnNwOzxhIGhyZWY9Imh0dHA6Ly93d3cucGF5dS5ybyIgdGFyZ2V0PSJfYmxhbmsiPjxzdHJvbmc+d3d3LnBheXUucm88L3N0cm9uZz48L2E+LjwvcD48cD4mbmJzcDs8L3A+PHA+PGltZyBzdHlsZT0iZmxvYXQ6IGxlZnQ7IGhlaWdodDogMTVweDsgbWFyZ2luLXJpZ2h0OiAxMHB4OyIgc3JjPSJpbWFnZXMvbG9nb19wYXlwYWwucG5nIiBib3JkZXI9IjAiIGFsdD0iIiAvPlRyYW56YWN0aWlsZSBpbiBFVVIsIFVTRCwgR0JQLCBTRUsgZWZlY3R1YXRlIHBlIG9wZW4ubWF4aXRvdXJzLmJlIHN1bnQgc2VjdXJpemF0ZSBkZSBjYXRyZSBzaXN0ZW11bCBkZSBwbGF0aSBQYXlQYWwgKDxhIGhyZWY9Imh0dHBzOi8vd3d3LnBheXBhbC5jb20vdXMvd2ViYXBwcy9tcHAvcGF5cGFsLXBvcHVwIj48c3Ryb25nPmh0dHBzOi8vd3d3LnBheXBhbC5jb20vdXMvd2ViYXBwcy9tcHAvcGF5cGFsLXBvcHVwPC9zdHJvbmc+PC9hPikgU2UgYWNjZXB0YSBwbGF0aSBwcmluIFZpc2Egc2kgTWFzdGVyY2FyZC4gTnUgc2UgYWNjZXB0YSBBbWVyaWNhbiBFeHByZXNzLiBUb2F0ZSBpbmZvcm1hdGlpbGUgc2NoaW1iYXRlIHBlbnRydSBhIHByb2Nlc2EgcGxhdGEgc3VudCBjcmlwdGF0ZSBmb2xvc2luZCBwcm90b2NvbHVsIFNTTC4gQWNlc3RlIGRhdGUgbnUgcG90IGZpIGRldGVjdGF0ZSwgaW50ZXJjZXB0YXRlIHNhdSBmb2xvc2l0ZSBkZSBjYXRyZSB0ZXJ0aSBzaSBudSBzdW50IHBhc3RyYXRlIGluIHNpc3RlbWVsZSBub2FzdHJlIGluZm9ybWF0aWNlLjxiciAvPiBQYXlQYWwgZXN0ZSB1biBmdXJuaXpvciBkZSBzZXJ2aWNpaSB0ZWhuaWNlIHNpIG51IHNlIG9jdXBhIGRlIGxpdGlnaWlsZSBsZWdhdGUgZGUgY29tZW56aS4gQWNlc3RlYSB0cmVidWllIHNhIGZpZSByZXpvbHZhdGUgZGlyZWN0IGN1IG9wZW4ubWF4aXRvdXJzLmJlIHNpLyBzYXUgYmFuY2EgZHVtbmVhdm9hc3RyYS48YnIgLz4gTWFpIG11bHRlIGluZm9ybWF0aWkgZGVzcHJlIFBheVBhbDombmJzcDs8YSBocmVmPSJodHRwczovL3d3dy5wYXlwYWwuY29tLyI+PHN0cm9uZz5odHRwczovL3d3dy5wYXlwYWwuY29tLzwvc3Ryb25nPjwvYT48L3A+ZGQCCQ8PFgIfCmhkZAILDw8WAh8ABTBodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0NvbmRpdGlpLURlLUNhbGF0b3JpZS9kZAIMDw8WAh8ABS5odHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL1Rlcm1lbmktU2ktQ29uZGl0aWkvZGQCDQ8PFgIfAAUiaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9DYXJpZXJlL2RkAg4PDxYCHwAFPmh0dHA6Ly93d3cuYmx1ZWFpcndlYi5jb20vSW5mb3JtYXRpaS1VdGlsZS9Db211bmljYXRlLURlLVByZXNhZGQCDw8PFgIfAAU1aHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9JbmZvcm1hdGlpLVV0aWxlL05ld3NsZXR0ZXJkZAIQDw8WAh8ABSVodHRwOi8vd3d3LmJsdWVhaXJ3ZWIuY29tL0NvbnRhY3Qtcm8vZGQCEQ8PFgIfAAUhaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9PcGluaWkvZGQCEg8PFgIfAAUlaHR0cDovL3d3dy5ibHVlYWlyd2ViLmNvbS9IYXJ0YS1TaXRlL2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYEBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJEJvb2tpbmdCb3gxJHJkb1JvdW5kVHJpcAUvY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRCb29raW5nQm94MSRyZG9PbmVXYXkFL2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkQm9va2luZ0JveDEkcmRvT25lV2F5BSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNrYkFncmVlbWVudHhHG/AAf8+pdfo395sDKLjKdySKjOXGgy8AHmbX3Dsv" />
+
+
+<script src="/ScriptResource.axd?d=Bsg_mrBxnwKRxOIpRbDXRMa_f4c4IWRGPI2F0Nz9HwzeM_MucLHfwgXhesLRESzYzjFpZPYS2Tt7o8lkhxcbPJEsm2vMrp5VCfpF-9oozlBkY9vVPRwIGHqbj6bcCJHfQClBk8M_DzD6RqdbK5NQsuFkjSkOF2MHo0LMeHP8tHYCeEkqdx4kr28ghg9-8S0n0&amp;t=ffffffffeea0dba9" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=MZO1zW-LjAkbjLD9hi9rnsbuJPOMkGMt2GhhJG1V-C4zWhaZg8QOtePqYY0HO7oSj1gt3qsqeJDKLo3XlAgmv33SXPJspNhC7Dxg1y9Jpa_qXVBoOqb4_IrBaOr8hswX60Q8dJIZ1fPbKuckaIunalKTDaf3ahCXI0BcYjC38rg1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ld3i56RRORlSDNtXLY2J_342NuGQlJ9_r6F3yd1C1zFmLZV30-29Fo_AIG5Wbs619S8i3uLOfYp9U-oAqThDNG69q4cE6g68q5zy2wW4_-AuCV2X7mHrgdCG7PQCun_nJnVL_0NALizitS65bzDOFcG3SChzt-NfnEL-d4Fepww1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=VyQEk25NHeohNTKy-xm4HWUGbaw24YWKFUV5HKS-VNl6vs3fMoeWxThZqIEzfZ24lvf6XGJ8p86v6IKIuYRR0i0vslSvLd1SswV7-5E9vTFTYh2BVJzWMI2JsIFZ4KRpS8eTtJTDoXAd3Z66H7pssjCpmjheiGnPzDL9LUzDXFZeRhtFxe1jid5Y6XYBXrV-0&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=8UZu1MueMLHBTCQB-grIMxEUSc2eHGRMdqPIMLFNGCLBUoDNiJip6pqn28R0YmZCKJCm98vZDPuORpS8PZGvYd-Tyo1BNL6pBg1cnSYTwX1FqI3vqXTF7JtSdHD7uquU_aGC48xw7j3Xq36ycsYW1haF153H2l_ofseujGlFmas1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=5IcThmYK5RLMODS4pV8pCVWqCnW_NLxhhenjygTJYH-KjtRlDdSQ0kUz2WSidfuO70GY8-3-VCIEj5-WnXk-kwq-EDBER9TGUv4OICJ4Vy4E4mPMRqMx9phiBRF7Omv4PTFq3-rF_xzoZHYWQcBRPSKK9EY6W9-FI1qhTrMhLX81&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=I2uckpHN9FXLxT7YHKvP0tfTmGiEUEVyi1vUvGkRMiyXUi2gyrHwaLd91Ti8GOrOvapcWvgHNvbKPIBPMMXTmU-Q1DtGfkowqvUnM79A85qYGDpEgqxYUMw2FW--MxFoGywuq5savmBx2VtAmWnKpRrdib-oxmoWMcY2tSZFRKKP2DCb0lcbsmnf-qvW8wF70&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gP9xm8JrO35M2Ejy6D8FGZ8OKFaw8OlqBznNALc1E4-U52frKzlt_o2H6Om_heZkAegoO-nxkydF5ZEo0a2VlUu2IfsLyVykqFL8yN1ryOnCRLqOomuZO5gkNs8SiTFpnBK8jwaxsuy_PlwyIEIHABLeEFusRrNgigpeli1oUWrsh20BycVb5iEAiSTw3DIX0&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=X18R_R_9uA2PDo_i8_WTJnSewlF3uQBig3McCV7HIzcUypf1NMusrpVwlb06i4ZhxzAWSduXo8_K2L-aElQmPJEOvy8GOlw-vpPLs5YgX6GbI6FxzS_UGvZzZ-y80TPrcry4g8BkxfN_d5CbloDyX1biQmZGBRVya8uwyxiHoVTn5gRoxYpV2ln9hkPWFzrm0&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=6YIh7bUrh6VD8lVd7lUNgprO6ikZWSzVPTqr9QMNKpdljd0lM7v13T785AnKaU2247VV9y_oAHxAsohlNJekOYG8eGFTxdZk7DWmfWnV-gUXbxLmdQOlfEXGz7_3Tizya9hwIkggrzNboWRdIzlhJv7dcvpYe1NblxvHshOJ4yAeu1uhFtGNIXrWl6a3Da4o0&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=7NPO0FRF4pT-Abnx1D-_82k-86C38xMP7ycoyLzLIGEB8H1kyqhKTBDORscP_fiIYc3nbwMQaX5E5PtSCJmJnAwg7kK5__NefF_c8KcqDxuCTdQhgSm3xRKqqEEFFsKDuSeFxe2x2sa0EoqARv6gqnGWrFk3z2AlRVjKd6AJqNY1&amp;t=5f915bbd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=UFEzLCaQSJJjLngvD0gH2HvV2IMrIbquLr8j4ytTgzVw9ljQz8KXefYGg5_wSB8-hXBro-2_OKMKYSdX-lyTa_mTN4eM_jhXXviXQkt8_7EllktB8TmvND_xEQVemefhm6ODFcNybpH91epkwYWW7jHsmMBMcuaTUFCTGHxzealgqSPXR5SCR4fEP2Iy2wHogOWdN-SmvTO34rbXyrrKbA2&amp;t=5f915bbd" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="37479C00" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAEqLLoeK+137sCg59dx7xKYB4+3WpZQNb82rzs2KnT3rh1V6RkAfufrqJa6LpqnGFguUSql7O3dkaVkZ0j1bfhE2FkKdD8C7U7DzU2ExakSGMs4MAowDZqTNSfV+/9RNGFxnrchSf+FyhucrQ53p85aMLn7yjUzY4mIRUqKBosY9+XTF3vthPrFh3+QVYmWPl6MLG8j+42yAu+I1wO6JZMEle1fIXWnVJP9WMIJQADHczV1taSGV5tV7vvB8HLkn631vsXuc4o8G2dzAtx8UjV0spmIQBxWyy6UXpF+FtVQF1vxbQx9tRAou4i7l4K3gkJ/8qzaRqqF6X1jRu+35nty5fGmYAGEQ98jGULAwYFbNVMrCqwayRCXBMlEonPlAKiPjSoarabL/dUuzHvCT6UsDZYu5WD0RbfZ7lOgOzHT9lT1B2mrxgU3elkkcW1zG3w+mnFDlnXCRHxXPao0ytRd3tdcoMy2v7gWLQtjIi6ggEqN2vn3Lh5v1ZwD4/wdsyzYmie4+jTmkmzmFRCUSMy8LqXTKWR5yX8KKG+BZ9MMBXI6EjVOz4Kz6LYw3DRp4sW3xt+QPtFpzUBO1XfvIyOGiQscwYmGJlNqan/TvP29VBu2ZffPGujmFctKKsfX8gflGpvUzyOwRDpANJg7D4+3YNgt0gRzM3sBzlEvPZz8DDlZEuVIbBriahgXbm/GxZS7oHIXjmN1zrTADyX3s6zfCffPkB+TWxjEalYn3qBOTXL61mmjVif5+HxSLnZWd5369l+5DvlKV2PbFNdp2sOVmqVY5tjln89plL8tY6rLLx3cdVBihpgefIznOrONOgEvOfVOKNys06dYXQYIbhoj2PosuU6uRIUrdjQnF8yFuJtRU/qY+rv7dGMYY/dvpiye0yRrnUBHQ5FKiMDmano4601Z7kEDMjrWhHiFyX1OjhQZJxml/dNI4rzUVJKnjz9h9fAQ8lhlK9rUV4L/xvSvnuzZioKHQ7GTZF4fZzUI+wBMXjyNz1oUcs9cJDatUglrXjjc4kogSRZa773/orZkiO8t0i78kXlbIpTCuT+82TkZWTqB1xl5xIr/MunPmZNm9X2c7gnJOs98hIqEisGU4vq9eqnfVbk4JC8pPRXKiYr2eNHOsc4kF+32ufqeFCqJG/Bb/nWLzKiidjhVQa90eSCwxtxfa1e2Y6OJSyYZbzEV1Jm+3eeoNJaliOdPQ5lxJiVKAm/ierhpmb7vef88XPCFgPve30Ujkq7YhDRCUOuLYiWmHkOymNKA2ip1LpCW6DrjSutPIET0Giv4SSzaQRxz9Bnrc5e7849zG+qMJbKrPTT2CUmwVCgxB07fmW2Pa5YAe8Fmm7p0Vb1/agtEZjFrYx1Dwj0Ck1mD4VaAhcgYw61klZQv2ynBUpxGfal7pPtXI4DRB/dai5YkT2xoUIsM5PyH9T5ngemTIH5zmPli9OYiqKo9L4yXdKb1kX7IIdU27TI/29mW5rCnSJbOdFbG+D1ZGuox6ZYPgRP/8m16vIdESsJUxMHYEEa+j70JgPVDVSpyKg4UOGsjJa0FiAIaQvsNTVBbqWSDXoWlkWWOalAF9AdP3lgJdOFKsRiKxBgwur1hoxfzNyXFraHn2" />
+        
+        
+        <div id="contentWrapper">
+            <div id="ba_header">
+                <a id="ctl00_hlnkLogo" title="Blue Air - Smart Flying" class="logo" href="Default.aspx"><img src="images/blueair.png" alt="Blue Air - Smart Flying" /></a>
+                <div class="languages">
+                    <label>Limba:</label><div class="ro-RO"></div>
+                    <span>Romana</span>
+                    <div class="flags">
+                        <ul>
+                            <li><a id="lnk_ro-RO" href="?culture=ro-ro" hreflang="ro-RO" title="Blue Air - Smart Flying Romana" rel="alternate">
+                                <div class="ro-RO"></div>
+                                <span>Romana</span></a></li>
+                            <li><a id="lnk_de-DE" href="?culture=de-de" hreflang="de-DE" title="Blue Air - Smart Flying Deutsch" rel="alternate">
+                                <div class="de-DE"></div>
+                                <span>Deutsch</span></a></li>
+                            <li><a id="lnk_en-US" href="?culture=en-us" hreflang="en-US" title="Blue Air - Smart Flying English" rel="alternate">
+                                <div class="en-US"></div>
+                                <span>English</span></a></li>
+                            <li><a id="lnk_es-ES" href="?culture=es-es" hreflang="es-ES" title="Blue Air - Smart Flying Español" rel="alternate">
+                                <div class="es-ES"></div>
+                                <span>Español</span></a></li>
+                            <li><a id="lnk_fr-FR" href="?culture=fr-fr" hreflang="fr-FR" title="Blue Air - Smart Flying Français" rel="alternate">
+                                <div class="fr-FR"></div>
+                                <span>Français</span></a></li>
+                            <li><a id="lnk_it-IT" href="?culture=it-it" hreflang="it-IT" title="Blue Air - Smart Flying Italiano" rel="alternate">
+                                <div class="it-IT"></div>
+                                <span>Italiano</span></a></li>
+                            
+                            <li><a id="lnk_nl-BE" href="?culture=nl-be" hreflang="nl-BE" title="Blue Air - Smart Flying Dutch" rel="alternate">
+                                <div class="nl-BE"></div>
+                                <span>Dutch</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+<script type="text/javascript">
+    var callcenter = '0903 760 130 (tarif 0.62 &euro;/min)|0374 281 841'.split('|');
+    var callcenterIndex = 0;
+
+    $(document).ready(function () {
+        var $divCallcenter = $("#divCallcenter");
+        if (callcenter.length > 0) {
+            $divCallcenter.html(callcenter[callcenterIndex]);
+            callcenterIndex++;
+            $divCallcenter.show();
+
+            setInterval(function () {
+                $divCallcenter.fadeOut("slow", function () {
+                    $divCallcenter.html(callcenter[callcenterIndex]);
+                    callcenterIndex = (callcenterIndex < callcenter.length - 1) ? callcenterIndex + 1 : 0;
+                    $divCallcenter.fadeIn("slow");
+                });
+
+            }, 3000);
+        }
+        else
+            $divCallcenter.hide();
+    });
+
+</script>
+<div id="divCallcenter">
+    <span></span>
+</div>
+
+                <div class="ba_news">
+                    <a href="http://www.blueairweb.com/rss-ro" target="_blank" class="rss">
+                        <img src="images/master/head_rss.png" width="14" height="15" alt="RSS" border="0" />
+                    </a>
+                    <span id="ctl00_Literal1" class="big">Noutati</span>
+                    <div class="newsslider">
+                        <div id="ctl00_News2_divMain">
+    <div class="newsslidercontent" id="newsslider">
+        
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("div.newssection a").each(function () {
+            if ($(this).html() == '*') $(this).parent().hide();
+        });
+    });
+</script>
+
+                    </div>
+                </div>
+                <div style="clear: both">
+                </div>
+                <div class="head_search">
+                    <input name="ctl00$txtSearch" type="text" maxlength="100" id="ctl00_txtSearch" class="search_txt" onmousedown="setSearchButtonFocus();" onkeydown="GetEnter(event);" onblur="StripHTMLFromSearchText()" />
+                    <input type="submit" name="ctl00$btnSearch" value="" id="ctl00_btnSearch" class="search_but" />
+                </div>
+                
+<ul class="mainmenu">
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_lbtnHome" title="HOME" href="http://www.blueairweb.com/Prima-Pagina/" target="_top">HOME</a>
+    </li>
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_hlnkDestinations" title="DESTINATII">DESTINATII</a>
+        <div class="sub1">
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkDestinationsMap" title="Harta destinatii" href="http://www.blueairweb.com/Destinatii/Harta-Destinatiilor" target="_top">Harta destinatii</a>
+                </li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkDestinationsFlightsSchedule" title="Orar de zbor" href="http://www.blueairweb.com/Destinatii/Orar-De-Zbor" target="_top">Orar de zbor</a>
+                </li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkDestinationsAndAirports" title="Destinatii si aeroporturi" class="last" href="http://www.blueairweb.com/Destinatii/Destinatii-Si-Aeroporturi" target="_top">Destinatii si aeroporturi</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_hlnkServices" title="SERVICII" href="http://www.blueairweb.com/Servicii/">SERVICII</a>
+        <div class="sub2">
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCheckin" title="Lounge&amp;Protocol" href="http://www.blueairweb.com/Servicii/Lounge-Protocol" target="_top">Lounge&Protocol</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkGroupReservations" title="Grupuri" href="http://www.blueairweb.com/Servicii/Rezervari-Grup" target="_top">Grupuri</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCharter" title="Charter" href="http://www.blueairweb.com/Servicii/Charter" target="_top">Charter</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkBlueBistro" title="Blue Bistro" class="last" href="http://www.blueairweb.com/Servicii/Blue-Bistro">Blue Bistro</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCargo" title="Cargo" href="http://www.blueairweb.com/Servicii/Cargo" target="_top">Cargo</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkEBorder" title="E-Border" href="http://www.blueairweb.com/Servicii/E-Border" target="_top">E-Border</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkWebCheckin" title="Check-in Online" class="last" href="https://open.maxitours.be/searchwebcheckin.aspx?culture=ro-ro">Check-in Online</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkAdvertising" title="Advertising" href="http://www.blueairweb.com/Servicii/Publicitate" target="_top">Advertising</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkEServices" title="E-services" href="http://www.blueairweb.com/Servicii/E-Services">E-services</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkShuttleBusTransfer" title="Transfer Autocar" class="last" href="http://www.blueairweb.com/Servicii/Transfer-Autocar">Transfer Autocar</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_hlnkCorporate" title="CORPORATE" href="http://www.blueairweb.com/Corporate/Cont-Nou" target="_top">CORPORATE</a></li>
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_hlnkAgencies" title="AGENTII BLUE AIR" href="http://www.blueairweb.com/Agentie/Index" target="_top">AGENTII BLUE AIR</a></li>
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_hlnkUtilInfos" title="INFO UTILE">INFO UTILE</a>
+        <div class="sub3">
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkUtilInfosNewsArchive" title="Noutati" href="http://www.blueairweb.com/Informatii-Utile/Ultimele-Noutati" target="_top">Noutati</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkGiftVoucher" title="Voucher Cadou" href="http://www.blueairweb.com/Informatii-Utile/Voucher-Cadou" target="_top">Voucher Cadou</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkOferteSpeciale" title="Istoric oferte" class="last" href="http://www.blueairweb.com/Istoric-Oferte/" target="_top">Istoric oferte</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkUtilInfosTravelGuide" title="Modalitati de plata" href="http://www.blueairweb.com/Informatii-Utile/Ghid-De-Calatorie" target="_top">Modalitati de plata</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkOthersCarriageConditions" title="Conditii de calatorie" href="http://www.blueairweb.com/Conditii-De-Calatorie/" target="_top">Conditii de calatorie</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkUtilInfosCallCenter" title="Call center" class="last" href="http://www.blueairweb.com/Informatii-Utile/Call-Center" target="_top">Call center</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkUtilInfosNewsletter" title="Newsletter" href="http://www.blueairweb.com/Informatii-Utile/Newsletter" target="_top">Newsletter</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkSpecialAssistance" title="Asistenta speciala" class="last" href="http://www.blueairweb.com/Informatii-Utile/Asistenta-speciala" target="_top">Asistenta speciala</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="first-level">
+        <a id="ctl00_BlueAirMenuNew1_hlnkCompany" title="DESPRE NOI">DESPRE NOI</a>
+        <div class="sub4">
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCompanyAboutUs" title="Istoric" href="http://www.blueairweb.com/Companie/Despre-Noi" target="_top">Istoric</a>
+                </li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCompanyCrews" title="Echipaj" href="http://www.blueairweb.com/Companie/Echipaje" target="_top">Echipaj</a>
+                </li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCompanyFleet" title="Flota" href="http://www.blueairweb.com/Companie/Flota" target="_top">Flota</a>
+                </li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkCompanySafety" title="Siguranta zborului" class="last" href="http://www.blueairweb.com/Companie/Siguranta" target="_top">Siguranta zborului</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkOthersCareers" title="Cariere" href="http://www.blueairweb.com/Cariere/" target="_top">Cariere</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkUtilInfosPress" title="Presa" href="http://www.blueairweb.com/Informatii-Utile/Comunicate-De-Presa" target="_top">Presa</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkOthersContact" title="Contact" href="http://www.blueairweb.com/Contact-ro/" target="_top">Contact</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkStaffOnly" title="Staff only" class="last" href="http://www.blueairweb.com//Companie/Staff">Staff only</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_lnkInflightMagazine" title="Revista Inflight" href="http://www.blueairweb.com/Companie/Revista-Inflight" target="_top">Revista Inflight</a>
+                </li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkRss" title="RSS" href="http://www.blueairweb.com/rss-ro" target="_blank">RSS</a></li>
+                <li>
+                    <a id="ctl00_BlueAirMenuNew1_hlnkNewsBox" title="Syndication" class="last" href="http://www.blueairweb.com/Informatii-Utile/Caseta-Stiri">Syndication</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+
+            </div>
+            
+    <div id="leftWrapper">
+        <div id="ctl00_ContentPlaceHolder1_updLeftWrapper">
+	
+                
+
+<script type="text/javascript">
+    var jsonDestinations = '{"DestinationsList":[{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","CountryName":"BELGIA","CountryCode":"BE "},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":"CIPRU","CountryCode":"CY "},{"IATA":"CPH","Name":"Copenhaga - Copenhagen Airport","CountryName":"Danemarca","CountryCode":"DK "},{"IATA":"BOD","Name":"Bordeaux - Bordeaux Airport","CountryName":"FRANTA","CountryCode":"FR "},{"IATA":"LYS","Name":"Lyon - St. Exupery (Terminal 1)","CountryName":"FRANTA","CountryCode":"FR "},{"IATA":"NCE","Name":"Nisa - Côte d\u0027Azur - Terminal 1","CountryName":"FRANTA","CountryCode":"FR "},{"IATA":"BVA","Name":"Paris (Beauvais) - Beauvais","CountryName":"FRANTA","CountryCode":"FR "},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":"GERMANIA","CountryCode":"DE "},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","CountryName":"GERMANIA","CountryCode":"DE "},{"IATA":"CGN","Name":"Koln - Koln Bonn - Terminal 2","CountryName":"GERMANIA","CountryCode":"DE "},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":"GERMANIA","CountryCode":"DE "},{"IATA":"ATH","Name":"Atena - Athens International Airport","CountryName":"GRECIA","CountryCode":"GR "},{"IATA":"SKG","Name":"Salonic - Thessaloniki Macedonia International Airport","CountryName":"GRECIA","CountryCode":"GR "},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":"Irlanda","CountryCode":"IE "},{"IATA":"TLV","Name":"Tel Aviv - Ben Gurion Airport - Terminal 3","CountryName":"Israel","CountryCode":".  "},{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"BRI","Name":"Bari - Aeroport Bari","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"BLQ","Name":"Bologna - Marconi","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"FLR","Name":"Florenta - Peretola","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"MXP","Name":"Milano - Malpensa","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"BGY","Name":"Milano (Bergamo) - Orio al Serio","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"LIN","Name":"Milano (Linate) - Linate","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"PSR","Name":"Pescara - Abruzzo","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":"ITALIA","CountryCode":"IT "},{"IATA":"BHX","Name":"Birmingham - Birmingham Airport","CountryName":"MAREA BRITANIE","CountryCode":"GB "},{"IATA":"GLA","Name":"Glasgow - Glasgow International Airport (Terminal 1)","CountryName":"MAREA BRITANIE","CountryCode":"GB "},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":"MAREA BRITANIE","CountryCode":"GB "},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":"MAREA BRITANIE","CountryCode":"GB "},{"IATA":"LIS","Name":"Lisabona - Lisbon Airport (Terminal 2)","CountryName":"Portugalia","CountryCode":"PT "},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"SBZ","Name":"Sibiu - Sibiu","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"TSR","Name":"Timisoara - Traian Vuia","CountryName":"ROMANIA","CountryCode":"RO "},{"IATA":"ALC","Name":"Alicante - ALICANTE AIRPORT","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"BCN","Name":"Barcelona - El Prat - Terminal 2","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"CDT","Name":"Castellon - Castellon De La Plana Airport","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"IBZ","Name":"Ibiza - Ibiza","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"PMI","Name":"Palma de Mallorca - Palma de Mallorca Airport","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"SVQ","Name":"Sevilla - Sevilla Airport","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"VLC","Name":"Valencia - Manises - Terminal 2","CountryName":"SPANIA","CountryCode":"ES "},{"IATA":"ARN","Name":"Stockholm - Stockholm Arlanda Airport (Terminal 5)","CountryName":"Suedia","CountryCode":"SE "}]}';
+    var jsonConnections = '[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","Connections":[{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"ALC","Name":"Alicante - ALICANTE AIRPORT","Connections":[{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null}]},{"IATA":"ATH","Name":"Atena - Athens International Airport","Connections":[{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null}]},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","Connections":[{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"BLQ","Name":"Bologna - Marconi","CountryName":null,"CountryCode":null},{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"BGY","Name":"Milano (Bergamo) - Orio al Serio","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"BCN","Name":"Barcelona - El Prat - Terminal 2","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"BRI","Name":"Bari - Aeroport Bari","Connections":[{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"TXL","Name":"Berlin - Tegel","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"BHX","Name":"Birmingham - Birmingham Airport","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null}]},{"IATA":"BLQ","Name":"Bologna - Marconi","Connections":[{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"BOD","Name":"Bordeaux - Bordeaux Airport","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null}]},{"IATA":"XHV","Name":"Brasov - transfer - autocar","Connections":[{"IATA":"BCN","Name":"Barcelona - El Prat - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"BHX","Name":"Birmingham - Birmingham Airport","CountryName":null,"CountryCode":null},{"IATA":"BLQ","Name":"Bologna - Marconi","CountryName":null,"CountryCode":null},{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","CountryName":null,"CountryCode":null},{"IATA":"CDT","Name":"Castellon - Castellon De La Plana Airport","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"FLR","Name":"Florenta - Peretola","CountryName":null,"CountryCode":null},{"IATA":"GLA","Name":"Glasgow - Glasgow International Airport (Terminal 1)","CountryName":null,"CountryCode":null},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"CGN","Name":"Koln - Koln Bonn - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null},{"IATA":"LIS","Name":"Lisabona - Lisbon Airport (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"LYS","Name":"Lyon - St. Exupery (Terminal 1)","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"MXP","Name":"Milano - Malpensa","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"NCE","Name":"Nisa - Côte d\u0027Azur - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"BVA","Name":"Paris (Beauvais) - Beauvais","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null},{"IATA":"VLC","Name":"Valencia - Manises - Terminal 2","CountryName":null,"CountryCode":null}]},{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","Connections":[{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"OTP","Name":"Bucuresti - Otopeni","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"BCN","Name":"Barcelona - El Prat - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"BHX","Name":"Birmingham - Birmingham Airport","CountryName":null,"CountryCode":null},{"IATA":"BLQ","Name":"Bologna - Marconi","CountryName":null,"CountryCode":null},{"IATA":"BOD","Name":"Bordeaux - Bordeaux Airport","CountryName":null,"CountryCode":null},{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","CountryName":null,"CountryCode":null},{"IATA":"CDT","Name":"Castellon - Castellon De La Plana Airport","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"CPH","Name":"Copenhaga - Copenhagen Airport","CountryName":null,"CountryCode":null},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"FLR","Name":"Florenta - Peretola","CountryName":null,"CountryCode":null},{"IATA":"GLA","Name":"Glasgow - Glasgow International Airport (Terminal 1)","CountryName":null,"CountryCode":null},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"IBZ","Name":"Ibiza - Ibiza","CountryName":null,"CountryCode":null},{"IATA":"CGN","Name":"Koln - Koln Bonn - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null},{"IATA":"LIS","Name":"Lisabona - Lisbon Airport (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"LYS","Name":"Lyon - St. Exupery (Terminal 1)","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"LIN","Name":"Milano (Linate) - Linate","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"NCE","Name":"Nisa - Côte d\u0027Azur - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"BVA","Name":"Paris (Beauvais) - Beauvais","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"ARN","Name":"Stockholm - Stockholm Arlanda Airport (Terminal 5)","CountryName":null,"CountryCode":null},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":null,"CountryCode":null},{"IATA":"TLV","Name":"Tel Aviv - Ben Gurion Airport - Terminal 3","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null},{"IATA":"VLC","Name":"Valencia - Manises - Terminal 2","CountryName":null,"CountryCode":null}]},{"IATA":"CDT","Name":"Castellon - Castellon De La Plana Airport","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null}]},{"IATA":"CTA","Name":"Catania - Fontanarossa","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"IBZ","Name":"Ibiza - Ibiza","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","Connections":[{"IATA":"BHX","Name":"Birmingham - Birmingham Airport","CountryName":null,"CountryCode":null},{"IATA":"BOD","Name":"Bordeaux - Bordeaux Airport","CountryName":null,"CountryCode":null},{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"NCE","Name":"Nisa - Côte d\u0027Azur - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"TSR","Name":"Timisoara - Traian Vuia","CountryName":null,"CountryCode":null}]},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","Connections":[{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"BGY","Name":"Milano (Bergamo) - Orio al Serio","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"BVA","Name":"Paris (Beauvais) - Beauvais","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TSR","Name":"Timisoara - Traian Vuia","CountryName":null,"CountryCode":null}]},{"IATA":"CND","Name":"Constanta - transfer - autocar","Connections":[{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"FLR","Name":"Florenta - Peretola","CountryName":null,"CountryCode":null},{"IATA":"GLA","Name":"Glasgow - Glasgow International Airport (Terminal 1)","CountryName":null,"CountryCode":null},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null},{"IATA":"LIS","Name":"Lisabona - Lisbon Airport (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"LYS","Name":"Lyon - St. Exupery (Terminal 1)","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"MXP","Name":"Milano - Malpensa","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"NCE","Name":"Nisa - Côte d\u0027Azur - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null},{"IATA":"VLC","Name":"Valencia - Manises - Terminal 2","CountryName":null,"CountryCode":null}]},{"IATA":"CPH","Name":"Copenhaga - Copenhagen Airport","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","Connections":[{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"FLR","Name":"Florenta - Peretola","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"GLA","Name":"Glasgow - Glasgow International Airport (Terminal 1)","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null}]},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","Connections":[{"IATA":"BCN","Name":"Barcelona - El Prat - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"BRU","Name":"Bruxelles - Bruxelles Airport - Terminal B","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"DUB","Name":"Dublin - Dublin Airport - Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"FLR","Name":"Florenta - Peretola","CountryName":null,"CountryCode":null},{"IATA":"CGN","Name":"Koln - Koln Bonn - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"LIN","Name":"Milano (Linate) - Linate","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"BVA","Name":"Paris (Beauvais) - Beauvais","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":null,"CountryCode":null},{"IATA":"TSR","Name":"Timisoara - Traian Vuia","CountryName":null,"CountryCode":null},{"IATA":"VLC","Name":"Valencia - Manises - Terminal 2","CountryName":null,"CountryCode":null}]},{"IATA":"IBZ","Name":"Ibiza - Ibiza","Connections":[{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"CGN","Name":"Koln - Koln Bonn - Terminal 2","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"PMI","Name":"Palma de Mallorca - Palma de Mallorca Airport","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","Connections":[{"IATA":"ATH","Name":"Atena - Athens International Airport","CountryName":null,"CountryCode":null},{"IATA":"BHX","Name":"Birmingham - Birmingham Airport","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"SKG","Name":"Salonic - Thessaloniki Macedonia International Airport","CountryName":null,"CountryCode":null}]},{"IATA":"LIS","Name":"Lisabona - Lisbon Airport (Terminal 2)","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","Connections":[{"IATA":"ALC","Name":"Alicante - ALICANTE AIRPORT","CountryName":null,"CountryCode":null},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"HAM","Name":"Hamburg - Aeroport Hamburg (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"BGY","Name":"Milano (Bergamo) - Orio al Serio","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null}]},{"IATA":"LTN","Name":"Londra (Luton) - Luton","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"BRI","Name":"Bari - Aeroport Bari","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"IBZ","Name":"Ibiza - Ibiza","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"PMI","Name":"Palma de Mallorca - Palma de Mallorca Airport","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"LYS","Name":"Lyon - St. Exupery (Terminal 1)","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null}]},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"BRI","Name":"Bari - Aeroport Bari","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"PSR","Name":"Pescara - Abruzzo","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"MXP","Name":"Milano - Malpensa","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null}]},{"IATA":"BGY","Name":"Milano (Bergamo) - Orio al Serio","Connections":[{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null}]},{"IATA":"LIN","Name":"Milano (Linate) - Linate","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"NAP","Name":"Napoli - Napoli Airport","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"NCE","Name":"Nisa - Côte d\u0027Azur - Terminal 1","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null}]},{"IATA":"OMR","Name":"Oradea - Oradea","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"PMI","Name":"Palma de Mallorca - Palma de Mallorca Airport","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"BVA","Name":"Paris (Beauvais) - Beauvais","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"PSR","Name":"Pescara - Abruzzo","Connections":[{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"BRI","Name":"Bari - Aeroport Bari","CountryName":null,"CountryCode":null},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"LPL","Name":"Liverpool - John Lennon Airport","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"SKG","Name":"Salonic - Thessaloniki Macedonia International Airport","Connections":[{"IATA":"LCA","Name":"Larnaca - Larnaca Airport","CountryName":null,"CountryCode":null}]},{"IATA":"SVQ","Name":"Sevilla - Sevilla Airport","Connections":[{"IATA":"TRN","Name":"Torino - Caselle","CountryName":null,"CountryCode":null}]},{"IATA":"SBZ","Name":"Sibiu - Sibiu","Connections":[{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":null,"CountryCode":null}]},{"IATA":"ARN","Name":"Stockholm - Stockholm Arlanda Airport (Terminal 5)","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CND","Name":"Constanta - transfer - autocar","CountryName":null,"CountryCode":null}]},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null},{"IATA":"SBZ","Name":"Sibiu - Sibiu","CountryName":null,"CountryCode":null},{"IATA":"TLV","Name":"Tel Aviv - Ben Gurion Airport - Terminal 3","CountryName":null,"CountryCode":null}]},{"IATA":"TLV","Name":"Tel Aviv - Ben Gurion Airport - Terminal 3","Connections":[{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"STR","Name":"Stuttgart - Stuttgart Airport (Terminal 3)","CountryName":null,"CountryCode":null}]},{"IATA":"TSR","Name":"Timisoara - Traian Vuia","Connections":[{"IATA":"CLJ","Name":"Cluj-Napoca - Avram Iancu Airport","CountryName":null,"CountryCode":null},{"IATA":"CMD","Name":"Constanta - Mihail Kogalniceanu","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]},{"IATA":"TRN","Name":"Torino - Caselle","Connections":[{"IATA":"AHO","Name":"Alghero - Alghero Fertilia","CountryName":null,"CountryCode":null},{"IATA":"BCM","Name":"Bacau - George Enescu Airport","CountryName":null,"CountryCode":null},{"IATA":"BRI","Name":"Bari - Aeroport Bari","CountryName":null,"CountryCode":null},{"IATA":"TXL","Name":"Berlin - Tegel","CountryName":null,"CountryCode":null},{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"CTA","Name":"Catania - Fontanarossa","CountryName":null,"CountryCode":null},{"IATA":"CPH","Name":"Copenhaga - Copenhagen Airport","CountryName":null,"CountryCode":null},{"IATA":"IBZ","Name":"Ibiza - Ibiza","CountryName":null,"CountryCode":null},{"IATA":"SUF","Name":"Lamezia Terme - Aeroportul Lamezia Terme","CountryName":null,"CountryCode":null},{"IATA":"LIS","Name":"Lisabona - Lisbon Airport (Terminal 2)","CountryName":null,"CountryCode":null},{"IATA":"LTN","Name":"Londra (Luton) - Luton","CountryName":null,"CountryCode":null},{"IATA":"MAD","Name":"Madrid - Barajas Terminal 1","CountryName":null,"CountryCode":null},{"IATA":"AGP","Name":"Malaga - Malaga Airport - Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"NAP","Name":"Napoli - Napoli Airport","CountryName":null,"CountryCode":null},{"IATA":"OMR","Name":"Oradea - Oradea","CountryName":null,"CountryCode":null},{"IATA":"PMI","Name":"Palma de Mallorca - Palma de Mallorca Airport","CountryName":null,"CountryCode":null},{"IATA":"PSR","Name":"Pescara - Abruzzo","CountryName":null,"CountryCode":null},{"IATA":"FCO","Name":"Roma - Fiumicino Terminal 2","CountryName":null,"CountryCode":null},{"IATA":"SVQ","Name":"Sevilla - Sevilla Airport","CountryName":null,"CountryCode":null}]},{"IATA":"VLC","Name":"Valencia - Manises - Terminal 2","Connections":[{"IATA":"XHV","Name":"Brasov - transfer - autocar","CountryName":null,"CountryCode":null},{"IATA":"OTP","Name":"Bucuresti - Otopeni","CountryName":null,"CountryCode":null},{"IATA":"IAS","Name":"Iasi - Aeroport Iasi","CountryName":null,"CountryCode":null}]}]';
+    var hashCurrencies = new Object();
+ hashCurrencies["BRU"] = "EUR";
+ hashCurrencies["LCA"] = "EUR";
+ hashCurrencies["CPH"] = "EUR";
+ hashCurrencies["BOD"] = "EUR";
+ hashCurrencies["LYS"] = "EUR";
+ hashCurrencies["NCE"] = "EUR";
+ hashCurrencies["BVA"] = "EUR";
+ hashCurrencies["TXL"] = "EUR";
+ hashCurrencies["HAM"] = "EUR";
+ hashCurrencies["CGN"] = "EUR";
+ hashCurrencies["STR"] = "EUR";
+ hashCurrencies["BHX"] = "EUR";
+ hashCurrencies["GLA"] = "EUR";
+ hashCurrencies["LPL"] = "EUR";
+ hashCurrencies["LTN"] = "EUR";
+ hashCurrencies["ATH"] = "EUR";
+ hashCurrencies["SKG"] = "EUR";
+ hashCurrencies["DUB"] = "EUR";
+ hashCurrencies["TLV"] = "EUR";
+ hashCurrencies["AHO"] = "EUR";
+ hashCurrencies["BRI"] = "EUR";
+ hashCurrencies["BLQ"] = "EUR";
+ hashCurrencies["CTA"] = "EUR";
+ hashCurrencies["FLR"] = "EUR";
+ hashCurrencies["SUF"] = "EUR";
+ hashCurrencies["BGY"] = "EUR";
+ hashCurrencies["LIN"] = "EUR";
+ hashCurrencies["MXP"] = "EUR";
+ hashCurrencies["NAP"] = "EUR";
+ hashCurrencies["PSR"] = "EUR";
+ hashCurrencies["FCO"] = "EUR";
+ hashCurrencies["TRN"] = "EUR";
+ hashCurrencies["LIS"] = "EUR";
+ hashCurrencies["BCM"] = "RON";
+ hashCurrencies["XHV"] = "EUR";
+ hashCurrencies["OTP"] = "RON";
+ hashCurrencies["CLJ"] = "RON";
+ hashCurrencies["CMD"] = "EUR";
+ hashCurrencies["CND"] = "RON";
+ hashCurrencies["IAS"] = "RON";
+ hashCurrencies["OMR"] = "EUR";
+ hashCurrencies["SBZ"] = "RON";
+ hashCurrencies["TSR"] = "EUR";
+ hashCurrencies["ALC"] = "EUR";
+ hashCurrencies["BCN"] = "EUR";
+ hashCurrencies["CDT"] = "EUR";
+ hashCurrencies["IBZ"] = "EUR";
+ hashCurrencies["MAD"] = "EUR";
+ hashCurrencies["AGP"] = "EUR";
+ hashCurrencies["PMI"] = "EUR";
+ hashCurrencies["SVQ"] = "EUR";
+ hashCurrencies["VLC"] = "EUR";
+ hashCurrencies["ARN"] = "EUR";
+
+    var searchBox = new OPENBOOKING.SearchBox();
+
+    searchBox.destinationList = jsonDestinations;
+    searchBox.connectionsList = jsonConnections;
+    searchBox.hashCurrencies = hashCurrencies;
+    searchBox.select = "Selecteaza...";
+    searchBox.routesRoundtripOnly = "LCA-BGW|BGW-LCA|LCA-EBL|EBL-LCA|TRN-MAH|MAH-TRN|TRN-PMI|PMI-TRN";
+    searchBox.ddlFromClientID = "ctl00_ContentPlaceHolder1_BookingBox1_ddlFrom";
+    searchBox.ddlToClientID = "ctl00_ContentPlaceHolder1_BookingBox1_ddlTo";
+    searchBox.txtFromClientID = "ctl00_ContentPlaceHolder1_BookingBox1_txtFrom";
+    searchBox.txtToClientID = "ctl00_ContentPlaceHolder1_BookingBox1_txtTo";
+    searchBox.hfFromClientID = 'ctl00_ContentPlaceHolder1_BookingBox1_hfFrom';
+    searchBox.hfToClientID = "ctl00_ContentPlaceHolder1_BookingBox1_hfTo";
+    searchBox.txtDepartureDateClientID = "ctl00_ContentPlaceHolder1_BookingBox1_txtDepartureDate";
+    searchBox.txtReturnDateClientID = "ctl00_ContentPlaceHolder1_BookingBox1_txtReturnDate";
+    searchBox.rdoOneWayClientID = "ctl00_ContentPlaceHolder1_BookingBox1_rdoOneWay";
+    searchBox.rdoRoundTripClientID = "ctl00_ContentPlaceHolder1_BookingBox1_rdoRoundTrip";
+    searchBox.ddlCurrencyClientID = "ctl00_ContentPlaceHolder1_BookingBox1_ddlCurrency";
+    searchBox.pnlReturnClientID = "ctl00_ContentPlaceHolder1_BookingBox1_pnlReturn";
+    searchBox.langID = 'ro-RO';
+
+
+    $(document).ready(clientFunctions);
+
+    function onSearchClick() {
+        $('#pnlSearchFlights').show();
+        $('#pnlFindBooking').hide();
+        $('#aSearchFlight').attr('class', 'sflightP');
+        $('#aFindBooking').attr('class', 'rezervaD');
+    }
+    function onFindBookingClick() {
+        $('#pnlSearchFlights').hide();
+        $('#pnlFindBooking').show();
+        $('#aSearchFlight').attr('class', 'sflightD');
+        $('#aFindBooking').attr('class', 'rezervaP');
+    }
+
+    function clientFunctions() {
+        $('#aSearchFlight').click(function () {
+            onSearchClick();
+        });
+        $('#aFindBooking').click(function () {
+            onFindBookingClick();
+        });
+
+        searchBox.onDocumentReady();
+    }
+
+    function onTripTypeChanged_2(type) {
+        if (type == "oneWay") {
+            $("#ctl00_ContentPlaceHolder1_BookingBox1_pnlReturn").hide();
+        }
+        else {
+            $("#ctl00_ContentPlaceHolder1_BookingBox1_pnlReturn").show();
+        }
+    }
+</script>
+
+<div id="BlueSearchForm">
+    <div id="TabMenuForm">
+        <a class="sflightP" id="aSearchFlight">Cauta zboruri</a>
+        <a class="rezervaD" id="aFindBooking">Cautare rezervare</a>
+    </div>
+    <div id="pnlSearchFlights" style="padding: 0; margin: 0;">
+        <div id="dusintors">
+            <div class="left">
+                <input id="ctl00_ContentPlaceHolder1_BookingBox1_rdoRoundTrip" type="radio" name="ctl00$ContentPlaceHolder1$BookingBox1$TripType" value="rdoRoundTrip" checked="checked" /><label for="ctl00_ContentPlaceHolder1_BookingBox1_rdoRoundTrip">Calatorie dus intors</label>
+            </div>
+            <div class="right">
+                <input id="ctl00_ContentPlaceHolder1_BookingBox1_rdoOneWay" type="radio" name="ctl00$ContentPlaceHolder1$BookingBox1$TripType" value="rdoOneWay" /><label for="ctl00_ContentPlaceHolder1_BookingBox1_rdoOneWay">O singura directie</label>
+            </div>
+        </div>
+        <div id="marketCityPair_1" class="Frow1">
+            <div class="left">
+                <p>
+                    Calatorind de la
+                    &nbsp;
+                </p>
+                
+                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtFrom" type="text" id="ctl00_ContentPlaceHolder1_BookingBox1_txtFrom" />
+                <input name="ctl00$ContentPlaceHolder1$BookingBox1$hfFrom" type="text" value="TXL" id="ctl00_ContentPlaceHolder1_BookingBox1_hfFrom" style="display: none;" />
+            </div>
+            <div class="right">
+                <p>
+                    catre
+                    &nbsp;
+                </p>
+                
+                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtTo" type="text" id="ctl00_ContentPlaceHolder1_BookingBox1_txtTo" />
+                <input name="ctl00$ContentPlaceHolder1$BookingBox1$hfTo" type="text" value="FCO" id="ctl00_ContentPlaceHolder1_BookingBox1_hfTo" style="display: none;" />
+            </div>
+            <div class="clearer">
+            </div>
+        </div>
+        <div class="Frow2" id="marketDate_1">
+            <div class="left">
+                <p>
+                    Data plecarii
+                    &nbsp;
+                </p>
+                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtDepartureDate" type="text" value="04.02.2017" maxlength="10" id="ctl00_ContentPlaceHolder1_BookingBox1_txtDepartureDate" class="date-picker" data-css="{&quot;width&quot;: &quot;26em&quot;}" />
+            </div>
+            <div id="ctl00_ContentPlaceHolder1_BookingBox1_pnlReturn" class="right" style="display:block;">
+		
+                <p>
+                    Data de intoarcere
+                    &nbsp;
+                    &nbsp;
+                </p>
+                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtReturnDate" type="text" value="11.02.2017" maxlength="10" id="ctl00_ContentPlaceHolder1_BookingBox1_txtReturnDate" class="date-picker" data-css="{&quot;width&quot;: &quot;26em&quot;}" />
+            
+	</div>
+            <div class="clearer"></div>
+        </div>
+        <div id="grid">
+            <div class="column">
+                <p>
+                    Adult
+                </p>
+                <select name="ctl00$ContentPlaceHolder1$BookingBox1$ddlAdult" id="ctl00_ContentPlaceHolder1_BookingBox1_ddlAdult" class="wMed1s">
+		<option selected="selected" value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+
+	</select>
+            </div>
+            <div class="column">
+                <p>
+                    Copil
+                </p>
+                <select name="ctl00$ContentPlaceHolder1$BookingBox1$ddlChildren" id="ctl00_ContentPlaceHolder1_BookingBox1_ddlChildren" class="wMed1s">
+		<option selected="selected" value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+
+	</select>
+            </div>
+            <div class="column">
+                <p>
+                    Infant
+                    &nbsp;
+                </p>
+                <select name="ctl00$ContentPlaceHolder1$BookingBox1$ddlInfant" id="ctl00_ContentPlaceHolder1_BookingBox1_ddlInfant" class="wMed1s">
+		<option selected="selected" value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+
+	</select>
+            </div>
+            <div class="clearer">
+            </div>
+        </div>
+        <div class="Frow2">
+            <div class="Currency">
+                <p>
+                    Moneda
+                    &nbsp;
+                </p>
+                <select name="ctl00$ContentPlaceHolder1$BookingBox1$ddlCurrency" id="ctl00_ContentPlaceHolder1_BookingBox1_ddlCurrency" class="wHuges">
+		<option value="-1">Selecteaza...</option>
+		<option selected="selected" value="EUR">Euro(EUR)</option>
+		<option value="GBP">Sterling(GBP)</option>
+		<option value="RON">Lei(RON)</option>
+		<option value="USD">US Dollar(USD)</option>
+		<option value="SEK">Coroana suedeza(SEK)</option>
+		<option value="DKK">Danish Krone (DKK)</option>
+
+	</select>
+            </div>
+            <div class="clearer"></div>
+        </div>
+        <div class="bottomSearchFlights">
+            <div id="Flinks">
+                <div class="left">
+                    <a id="ctl00_ContentPlaceHolder1_BookingBox1_lnkTermsAndConditions" href="http://www.blueairweb.com/Termeni-Si-Conditii/" target="_blank">Termeni si conditii</a>
+                </div>
+                <div class="right">
+                    <a id="ctl00_ContentPlaceHolder1_BookingBox1_lnkAboutPassengers" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$BookingBox1$lnkAboutPassengers&#39;,&#39;&#39;)">Despre pasageri</a>
+                </div>
+            </div>
+            <div class="SearchButton" style="margin: 7px 0;">
+                <a id="ctl00_ContentPlaceHolder1_BookingBox1_btnSearchFlights" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$BookingBox1$btnSearchFlights&#39;,&#39;&#39;)">Cauta zbor</a>
+            </div>
+            <div class="clearer"></div>
+        </div>
+    </div>
+    <div id="pnlFindBooking" style="padding: 0; margin: 0; display: none;">
+        <div id="Ftitles">
+            <div class="left">
+                <span>
+                    Detalii ruta - Optiunea 1</span>
+            </div>
+        </div>
+        <div class="Frow3">
+            <table cellspacing="0" border="0" cellpading="0">
+                <tbody>
+                    <tr>
+                        <td style="width: 147px;">
+                            Booking id:
+                        </td>
+                        <td>
+                            <div class="fb1">
+                                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtConfirmationNumber1" type="text" maxlength="12" id="ctl00_ContentPlaceHolder1_BookingBox1_txtConfirmationNumber1" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="BookingRetrieveInputSiteSearchView_CONTACTEMAIL1Label">
+                                Email contact</label>
+                        </td>
+                        <td>
+                            <div class="fb1">
+                                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtContactEmail" type="text" id="ctl00_ContentPlaceHolder1_BookingBox1_txtContactEmail" />
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Ftitles">
+            <div class="left">
+                <span>
+                    Detalii ruta - Optiunea 2</span>
+            </div>
+        </div>
+        <div class="Frow3">
+            <table cellspacing="0" border="0" cellpading="0">
+                <tbody>
+                    <tr>
+                        <td style="width: 147px;">
+                            <label id="BookingRetrieveInputSiteSearchView_CONFIRMATIONNUMBER2Label">
+                                Booking id</label>
+                        </td>
+                        <td>
+                            <div class="fb1">
+                                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtConfirmationNumber2" type="text" maxlength="12" id="ctl00_ContentPlaceHolder1_BookingBox1_txtConfirmationNumber2" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="BookingRetrieveInputSiteSearchView_PAXLASTNAME2Label">
+                                Nume de familie pasager</label>
+                        </td>
+                        <td>
+                            <div class="fb1">
+                                <input name="ctl00$ContentPlaceHolder1$BookingBox1$txtLastName" type="text" id="ctl00_ContentPlaceHolder1_BookingBox1_txtLastName" />
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="SearchButton" style="margin: 7px 0;">
+            <a id="ctl00_ContentPlaceHolder1_BookingBox1_btnFindBooking" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$BookingBox1$btnFindBooking&#39;,&#39;&#39;)">Vizualizati</a>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+    <div id="TopButtons">
+        <a id="ctl00_ContentPlaceHolder1_BookingBox1_lnkHotel" class="hotel" href="http://www.blueairweb.com/Online-ro/Hotel-Hostel" target="_blank">
+                    <span>Hotel</span>
+        </a>
+        <a id="ctl00_ContentPlaceHolder1_BookingBox1_lnkRentACar" class="car" href="http://www.blueairweb.com/Online-ro/Rezervare-Masina" target="_blank">
+                    <span>Inchiriere Masina</span>
+        </a>
+        <a id="ctl00_ContentPlaceHolder1_BookingBox1_lnkParking" class="parking" href="http://blueair.parkvia.com/ro-RO" target="_blank">
+                    <span>Parcare Aeroport</span>
+        </a>
+    </div>
+</div>
+<div style="clear: both;">
+</div>
+<div id="ctl00_ContentPlaceHolder1_BookingBox1_updError">
+		
+        <div id="ctl00_ContentPlaceHolder1_BookingBox1_pnlError" class="pnlError" style="z-index: 1002; text-align: left;">
+			
+            
+            <span id="ctl00_ContentPlaceHolder1_BookingBox1_lblError" class="red11"></span>
+            <br />
+            <a id="ctl00_ContentPlaceHolder1_BookingBox1_btnOK" class="loginButton" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$BookingBox1$btnOK&#39;,&#39;&#39;)"><span>OK</span></a>
+        
+		</div>
+        <input name="ctl00$ContentPlaceHolder1$BookingBox1$hButton2" type="text" id="ctl00_ContentPlaceHolder1_BookingBox1_hButton2" text="" style="display: none;" />
+        
+    
+	</div>
+
+                
+<div class="divFindBooking">
+    
+    <a id="ctl00_ContentPlaceHolder1_FindBookingLeftBox1_lbtnWebCheckin" class="linkFindBooking" href="https://open.maxitours.be/searchwebcheckin.aspx?culture=ro-ro">CHECK-IN ONLINE</a>
+</div>
+<div style="clear: both;">
+</div>
+
+
+                
+
+<div style="margin: 5px 0; text-align: left; width: 100%;">
+    <a href="javascript:void(0)" class="carduri-logo">
+        <img src="https://open.maxitours.be/images/master/carduri-mastercard.png" alt="" /></a>
+    <a href="javascript:void(0)" class="carduri-logo">
+        <img src="https://open.maxitours.be/images/master/carduri-visa.png" alt="" /></a>
+    <a href="javascript:void(0)" class="carduri-logo">
+        <img src="https://open.maxitours.be/images/master/carduri-electron.png" alt="" /></a>
+    <a href="javascript:void(0)" class="carduri-logo">
+        <img src="https://open.maxitours.be/images/master/carduri-verified.png" alt="" /></a>
+    <div style="clear: both;"></div>
+    <a href="javascript:void(0)" class="carduri-logo">
+        <img src="https://open.maxitours.be/images/master/carduri-verisign.png" alt="" /></a>
+    <a href="https://payment-services.ingenico.com/" class="carduri-logo" target="_blank">
+        <img src="https://open.maxitours.be/images/master/carduri-ingenico.png" alt="" /></a>
+    <a href="http://www.payu.ro/" class="carduri-logo" target="_blank">
+        <img src="https://open.maxitours.be/images/master/carduri-payu.png" alt="" /></a>
+    <a href="https://www.paypal.com/us/webapps/mpp/paypal-popup" class="carduri-logo" target="_blank">
+        <img src="https://open.maxitours.be/images/master/carduri-paypal.png" alt="" /></a>
+</div>
+
+<div class="social-menu">
+    <a href="http://www.blueairweb.com/Informatii-Utile/Newsletter" title="Blue Air Newslleter">
+        <img src="images/layout/social-NL.png" alt="Blue Air Newslleter" />
+    </a><a href="http://blog.blueairweb.com" title="Blue Air Blog">
+        <img src="images/layout/social-wp.png" alt="Blue Air Blog" />
+    </a>
+    <a href="http://www.facebook.com/pages/Blue-Air/127545187653?ref=ts" title="Blue Air Facebook">
+        <img src="images/layout/social-fb.png" alt="Blue Air Facebook" />
+    </a>
+    <a href="http://twitter.com/blueairweb" title="Blue Air Twitter">
+        <img src="images/layout/social-tw.png" alt="Blue Air Twitter" />
+    </a>
+</div>
+
+<div id="ctl00_ContentPlaceHolder1_MyBlueAirLogin2_pnlAdd2" style="margin-top: 20px;">
+		
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 300x250 -->
+    <ins class="adsbygoogle"
+        style="display: inline-block; width: 300px; height: 250px"
+        data-ad-client="ca-pub-9411980896356165"
+        data-ad-slot="9405759935"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+	</div>
+
+            
+</div>
+    </div>
+    <div id="rightWrapper">
+        <div id="ctl00_ContentPlaceHolder1_myBookingHeader_imgTitle" class="BookingHeaderImage i1">
+	
+
+</div>
+<div class="BookingHeaderTitle">
+    <span id="ctl00_ContentPlaceHolder1_myBookingHeader_lblTitle">Selecteaza zbor</span>
+</div>
+<div class="clear"></div>
+<div id="ctl00_ContentPlaceHolder1_myBookingHeader_BookingSteps" class="BookingSteps">
+	
+    <a onclick="return false;" id="ctl00_ContentPlaceHolder1_myBookingHeader_tab0" class="tab" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$myBookingHeader$tab0&#39;,&#39;&#39;)">
+        <span>1. Cauta</span>
+    </a>
+    <a onclick="return false;" id="ctl00_ContentPlaceHolder1_myBookingHeader_tab1" class="tab i1 selected" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$myBookingHeader$tab1&#39;,&#39;&#39;)">
+        <span>2. Alege</span>
+    </a>
+    <a onclick="return false;" id="ctl00_ContentPlaceHolder1_myBookingHeader_tab2" class="tab" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$myBookingHeader$tab2&#39;,&#39;&#39;)">
+        <span>3. Servicii</span>
+    </a>
+    <a onclick="return false;" id="ctl00_ContentPlaceHolder1_myBookingHeader_tab3" class="tab" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$myBookingHeader$tab3&#39;,&#39;&#39;)">
+        <span>4. Pasageri</span>
+    </a>
+    <a onclick="return false;" id="ctl00_ContentPlaceHolder1_myBookingHeader_tab4" class="tab" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$myBookingHeader$tab4&#39;,&#39;&#39;)">
+        <span>5. Plata</span>
+    </a>
+    <a onclick="return false;" id="ctl00_ContentPlaceHolder1_myBookingHeader_tab5" class="tab" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$myBookingHeader$tab5&#39;,&#39;&#39;)">
+        <span>6. Rezervarea</span>
+    </a>
+
+</div>
+
+        <div id="ctl00_ContentPlaceHolder1_UpdatePanel">
+	
+                
+                        <div class="calendar_holder" data-schedule="0">
+                            <div class="mainHeader">
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl00_lblDepartureCalendarHeader">Plecare</span>
+                            </div>
+                            <div class="subHeader">
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl00_lblFrom1">Berlin - Tegel</span>
+                                <img src="images/content/RightBlueArrow.png" alt="" />
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl00_lblTo1">Roma - Fiumicino Terminal 2</span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            
+                                    <ul class="schedule">
+                                        <li class="prev-day">
+                                            <a id="ctl00_ContentPlaceHolder1_rptSchedules_ctl00_rptDays_ctl00_btnPrevDay" class="changeday" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$rptSchedules$ctl00$rptDays$ctl00$btnPrevDay&#39;,&#39;&#39;)"></a>
+                                        </li>
+                                
+                                    <li class="flight-day " data-day='02.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>jo</span>&nbsp;02.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day " data-day='03.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>vi</span>&nbsp;03.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day selected-day" data-day='04.02.2017' data-journey='0B~4020~ ~~TXL~02/04/2017 10:10~TRN~02/04/2017 11:50~~^0B~4107~ ~~TRN~02/04/2017 16:30~FCO~02/04/2017 17:45~~'>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>sâ</span>&nbsp;04.02.2017</span>
+                                            <span class="datemarket-price" style=''>74,94&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style='display:none'></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day " data-day='05.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>du</span>&nbsp;05.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day " data-day='06.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>lu</span>&nbsp;06.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="next-day">
+                                        <a id="ctl00_ContentPlaceHolder1_rptSchedules_ctl00_rptDays_ctl06_btnNextDay" class="changeday" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$rptSchedules$ctl00$rptDays$ctl06$btnNextDay&#39;,&#39;&#39;)"></a>
+                                    </li>
+                                    </ul>
+                                
+                            
+                                    <div class="datemarket-journeys" style='display: none;' data-day='02.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='display: none;' data-day='03.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='' data-day='04.02.2017'>
+                                        
+                                                <div class="datemarket-journey" style='' data-journey='0B~4020~ ~~TXL~02/04/2017 10:10~TRN~02/04/2017 11:50~~^0B~4107~ ~~TRN~02/04/2017 16:30~FCO~02/04/2017 17:45~~'>
+                                                    <a href="#" class="journey-details">
+                                                        <div class="flight-designator">
+                                                            
+                                                                    <img src="images/layout/operator-0B.png" alt="blue air" />
+                                                                
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="flight-details">
+                                                            <div class="line"></div>
+                                                            <div class="city">
+                                                                <span>Berlin</span>
+                                                                <span>10:10</span>
+                                                            </div>
+                                                            <img src="images/layout/plane.png" />
+                                                            <div class="city">
+                                                                <span>Roma</span>
+                                                                <span>17:45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="journey-time">
+                                                            <span>1&nbsp;Stops</span>
+                                                            <span>7h 35m</span>
+                                                        </div>
+                                                        <div class="price ">
+                                                            
+                                                            <span>
+                                                                <s>74,94&nbsp;EUR</s>
+                                                                74,94&nbsp;EUR
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="journey-show-segments" style=''>
+                                                        <a href="#">Informatii</a>
+                                                    </div>
+                                                    <div class="journey-segments" style="display: none;">
+                                                        
+                                                                <div class="journey-segment">
+                                                                    <div class="flight-designator">
+                                                                        <img src="images/layout/operator-0B.png" alt="blue air" />
+                                                                        <span>0B 4020</span>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div class="line"></div>
+                                                                        <div class="city">
+                                                                            <span>Berlin</span>
+                                                                            <span>10:10</span>
+                                                                        </div>
+                                                                        <img src='images/layout/plane.png' />
+                                                                        <div class="city">
+                                                                            <span>Torino</span>
+                                                                            <span>11:50</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="segment-time">
+                                                                        <span>Durata Calatoriei<br />
+                                                                            1h 40m</span>
+                                                                    </div>
+                                                                    <div class="segment-equipment">
+                                                                        <span>Echipament<br />
+                                                                            734</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="journey-segment-trazit" style=''>
+                                                                    <span>Tranzit&nbsp;4h 40m</span>
+                                                                </div>
+                                                            
+                                                                <div class="journey-segment">
+                                                                    <div class="flight-designator">
+                                                                        <img src="images/layout/operator-0B.png" alt="blue air" />
+                                                                        <span>0B 4107</span>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div class="line"></div>
+                                                                        <div class="city">
+                                                                            <span>Torino</span>
+                                                                            <span>16:30</span>
+                                                                        </div>
+                                                                        <img src='images/layout/plane.png' />
+                                                                        <div class="city">
+                                                                            <span>Roma</span>
+                                                                            <span>17:45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="segment-time">
+                                                                        <span>Durata Calatoriei<br />
+                                                                            1h 15m</span>
+                                                                    </div>
+                                                                    <div class="segment-equipment">
+                                                                        <span>Echipament<br />
+                                                                            735</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="journey-segment-trazit" style='display: none;'>
+                                                                    <span>Tranzit&nbsp;</span>
+                                                                </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                            
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='display: none;' data-day='05.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='display: none;' data-day='06.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                            <div class="headerOrange">
+                                <table cellspacing="0" cellpadding="0" border="0" class="tblTaxes" id="">
+                                </table>
+                                
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl00_lblTotalAmount" class="journey-totalamount" style="display: none;"></span>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="calendar_holder" data-schedule="1">
+                            <div class="mainHeader">
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl01_lblDepartureCalendarHeader">Intoarcere</span>
+                            </div>
+                            <div class="subHeader">
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl01_lblFrom1">Roma - Fiumicino Terminal 2</span>
+                                <img src="images/content/RightBlueArrow.png" alt="" />
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl01_lblTo1">Berlin - Tegel</span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            
+                                    <ul class="schedule">
+                                        <li class="prev-day">
+                                            <a id="ctl00_ContentPlaceHolder1_rptSchedules_ctl01_rptDays_ctl00_btnPrevDay" class="changeday" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$rptSchedules$ctl01$rptDays$ctl00$btnPrevDay&#39;,&#39;&#39;)"></a>
+                                        </li>
+                                
+                                    <li class="flight-day " data-day='09.02.2017' data-journey='0B~4008~ ~~FCO~02/09/2017 10:50~TRN~02/09/2017 12:05~~^0B~4019~ ~~TRN~02/09/2017 13:15~TXL~02/09/2017 14:55~~'>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>jo</span>&nbsp;09.02.2017</span>
+                                            <span class="datemarket-price" style=''>54,94&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style='display:none'></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day " data-day='10.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>vi</span>&nbsp;10.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day selected-day" data-day='11.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>sâ</span>&nbsp;11.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day " data-day='12.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>du</span>&nbsp;12.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="flight-day " data-day='13.02.2017' data-journey=''>
+                                        <a href="#">
+                                            <span class="datemarket-date"><span>lu</span>&nbsp;13.02.2017</span>
+                                            <span class="datemarket-price" style='display:none'>-1,00&nbsp;EUR</span>
+                                            <span class="datemarket-soldout" style='display:none'></span>
+                                            <span class="datemarket-noflights" style=''></span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="next-day">
+                                        <a id="ctl00_ContentPlaceHolder1_rptSchedules_ctl01_rptDays_ctl06_btnNextDay" class="changeday" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$rptSchedules$ctl01$rptDays$ctl06$btnNextDay&#39;,&#39;&#39;)"></a>
+                                    </li>
+                                    </ul>
+                                
+                            
+                                    <div class="datemarket-journeys" style='display: none;' data-day='09.02.2017'>
+                                        
+                                                <div class="datemarket-journey" style='' data-journey='0B~4008~ ~~FCO~02/09/2017 10:50~TRN~02/09/2017 12:05~~^0B~4019~ ~~TRN~02/09/2017 13:15~TXL~02/09/2017 14:55~~'>
+                                                    <a href="#" class="journey-details">
+                                                        <div class="flight-designator">
+                                                            
+                                                                    <img src="images/layout/operator-0B.png" alt="blue air" />
+                                                                
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="flight-details">
+                                                            <div class="line"></div>
+                                                            <div class="city">
+                                                                <span>Roma</span>
+                                                                <span>10:50</span>
+                                                            </div>
+                                                            <img src="images/layout/plane.png" />
+                                                            <div class="city">
+                                                                <span>Berlin</span>
+                                                                <span>14:55</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="journey-time">
+                                                            <span>1&nbsp;Stops</span>
+                                                            <span>4h 5m</span>
+                                                        </div>
+                                                        <div class="price ">
+                                                            
+                                                            <span>
+                                                                <s>54,94&nbsp;EUR</s>
+                                                                54,94&nbsp;EUR
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="journey-show-segments" style=''>
+                                                        <a href="#">Informatii</a>
+                                                    </div>
+                                                    <div class="journey-segments" style="display: none;">
+                                                        
+                                                                <div class="journey-segment">
+                                                                    <div class="flight-designator">
+                                                                        <img src="images/layout/operator-0B.png" alt="blue air" />
+                                                                        <span>0B 4008</span>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div class="line"></div>
+                                                                        <div class="city">
+                                                                            <span>Roma</span>
+                                                                            <span>10:50</span>
+                                                                        </div>
+                                                                        <img src='images/layout/plane.png' />
+                                                                        <div class="city">
+                                                                            <span>Torino</span>
+                                                                            <span>12:05</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="segment-time">
+                                                                        <span>Durata Calatoriei<br />
+                                                                            1h 15m</span>
+                                                                    </div>
+                                                                    <div class="segment-equipment">
+                                                                        <span>Echipament<br />
+                                                                            735</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="journey-segment-trazit" style=''>
+                                                                    <span>Tranzit&nbsp;1h 10m</span>
+                                                                </div>
+                                                            
+                                                                <div class="journey-segment">
+                                                                    <div class="flight-designator">
+                                                                        <img src="images/layout/operator-0B.png" alt="blue air" />
+                                                                        <span>0B 4019</span>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div class="line"></div>
+                                                                        <div class="city">
+                                                                            <span>Torino</span>
+                                                                            <span>13:15</span>
+                                                                        </div>
+                                                                        <img src='images/layout/plane.png' />
+                                                                        <div class="city">
+                                                                            <span>Berlin</span>
+                                                                            <span>14:55</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="segment-time">
+                                                                        <span>Durata Calatoriei<br />
+                                                                            1h 40m</span>
+                                                                    </div>
+                                                                    <div class="segment-equipment">
+                                                                        <span>Echipament<br />
+                                                                            735</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="journey-segment-trazit" style='display: none;'>
+                                                                    <span>Tranzit&nbsp;</span>
+                                                                </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                            
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='display: none;' data-day='10.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='' data-day='11.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='display: none;' data-day='12.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="datemarket-journeys" style='display: none;' data-day='13.02.2017'>
+                                        
+                                        <div class="legend">
+                                            <img src="images/layout/noflights.png" /><span>No Flights</span>
+                                            <img src="images/layout/soldout.png" /><span>Sold Out</span>
+                                        </div>
+                                    </div>
+                                
+                            <div class="headerOrange">
+                                <table cellspacing="0" cellpadding="0" border="0" class="tblTaxes" id="">
+                                </table>
+                                
+                                <span id="ctl00_ContentPlaceHolder1_rptSchedules_ctl01_lblTotalAmount" class="journey-totalamount" style="display: none;"></span>
+                                
+                            </div>
+                        </div>
+                    
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfDepartureDay" id="ctl00_ContentPlaceHolder1_hfDepartureDay" />
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfDepartureJourney" id="ctl00_ContentPlaceHolder1_hfDepartureJourney" />
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfReturnDay" id="ctl00_ContentPlaceHolder1_hfReturnDay" />
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfReturnJourney" id="ctl00_ContentPlaceHolder1_hfReturnJourney" />
+            
+</div>
+
+
+        <div class="headerOrange">
+            <span id="ctl00_ContentPlaceHolder1_Label1">Metoda de plata</span>
+            <div>
+                <select name="ctl00$ContentPlaceHolder1$ddlPaymentType" id="ctl00_ContentPlaceHolder1_ddlPaymentType">
+	<option selected="selected" value="-1">Selecteaza...</option>
+	<option value="CP1">Card Visa (0.00 EUR)</option>
+	<option value="CP3">Card MasterCard (0.00 EUR)</option>
+	<option value="CP2">Card Maestro (0.00 EUR)</option>
+	<option value="CP4">Card Bancontact/Mister Cash (0.00 EUR)</option>
+	<option value="PL">PayPal (0.00 EUR)</option>
+	<option value="AV">Card Avantaj (0.00 EUR)</option>
+
+</select>
+            </div>
+        </div>
+        <span id="ctl00_ContentPlaceHolder1_lblPaymentDetails"></span>
+        &nbsp;
+        <br />
+        <br />
+        <div class="chkConfirmation">
+            &nbsp;
+            &nbsp;
+            <input id="ctl00_ContentPlaceHolder1_ckbAgreement" type="checkbox" name="ctl00$ContentPlaceHolder1$ckbAgreement" /><label for="ctl00_ContentPlaceHolder1_ckbAgreement">Sunt de acord cu Termenii si Conditiile biletului. <a href="http://www.blueairweb.com/Conditii-De-Calatorie/" target="_blank">Conditii de calatorie</a></label>
+        </div>
+        <div class="TotalPriceContainer">
+            <span id="ctl00_ContentPlaceHolder1_lblBottomTotalAmountHeader" class="fontGreen">Total de plata</span>
+            <span id="ctl00_ContentPlaceHolder1_lblBottomTotalAmount"></span>
+        </div>
+        <div class="fr SearchButton">
+            <a onclick="return OPENBOOKING.SelectFlight.validatePage($(this).attr(&#39;href&#39;));" id="ctl00_ContentPlaceHolder1_btnSelect" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnSelect&#39;,&#39;&#39;)">Continua</a>
+        </div>
+        <div class="clear">
+        </div>
+        <br />
+        <div id="fareRules">
+            
+                    <div class="farerule" data-schedule="0">
+                        <span></span>
+                    </div>
+                
+                    <div class="farerule" data-schedule="1">
+                        <span></span>
+                    </div>
+                
+        </div>
+        <br />
+        <br />
+        
+<style>
+    .footer-note p:first-child { margin-top: 0; }
+</style>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 25px;">
+    <tr>
+        <td style="padding-right: 5px; padding-top: 3px;" valign="top">
+            <img src="images/master/bullet-round.png" alt="">
+        </td>
+        <td style="width: 100%;">
+            <span id="ctl00_ContentPlaceHolder1_FooterNote1_lbtnDirections" class="blue11 footernote"><p>Pretuim informarea clientilor nostri. De aceea, indiferent de nelamurirea pe care o ai, apeleaza non-stop Call Center-ul nostru.<br />Lista completa a numerelor de Call Center este disponibila <a href="../../Informatii-Utile/Call-Center">aici</a><br /><br />Ne puteti contacta gratuit completand <a href="../../Contact-ro/">acest formular</a>.<br /><br /></p></span>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 5px; padding-top: 3px;" valign="top">
+            <img src="images/master/bullet-round.png" alt="">
+        </td>
+        <td style="width: 100%;">
+            <span id="ctl00_ContentPlaceHolder1_FooterNote1_LinkButton1" class="blue11 footernote">Afla mai multe informatii utile despre zborul cu Blue Air de</span>
+            <a href="http://www.blueairweb.com/Informatii-Utile/Ghid-De-Calatorie" class="blue11" title="Informatii Utile - Ghid De Calatorie">aici</a><br />
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 5px; padding-top: 3px;" valign="top">
+            <img src="images/master/bullet-round.png" alt="">
+        </td>
+        <td style="width: 100%;">
+            <img style="float: left; height: 15px; margin-right: 10px;" src="images/logo_ogone.png" alt="" border="0" />
+            <span id="ctl00_ContentPlaceHolder1_FooterNote1_Label1" class="blue11 footernote"><p>Tranzactiile in EUR, USD, GBP efectuate pe open.maxitours.be sunt securizate de catre sistemul de plati Ingenico (<a href="http://www.payment-services.ingenico.com/" target="_blank"><strong>www.payment-services.ingenico.com</strong></a>). Toate informatiile schimbate pentru a procesa plata sunt criptate folosind protocolul SSL. Aceste date nu pot fi detectate, interceptate sau folosite de catre terti si nu sunt pastrate in sistemele noastre informatice.<br />Ingenico este un furnizor de servicii tehnice si nu se ocupa de litigiile legate de comenzi. Acestea trebuie sa fie rezolvate direct cu open.maxitours.be si/ sau banca dumneavoastra.<br />Mai multe informatii despre Ingenico:&nbsp;<a href="http://www.payment-services.ingenico.com/" target="_blank"><strong>www.payment-services.ingenico.com</strong></a></p><p>&nbsp;</p><p><img style="float: left; height: 15px; margin-right: 10px;" src="images/logo_payu.png" border="0" alt="" />Tranzactiile in RON efectuate pe open.maxitours.be sunt securizate de catre sistemul de plati PayU (<a href="http://www.payu.ro" target="_blank"><strong>www.payu.ro</strong></a>). Toate informatiile schimbate pentru a procesa plata sunt criptate folosind protocolul SSL. Aceste date nu pot fi detectate, interceptate sau folosite de catre terti si nu sunt pastrate in sistemele noastre informatice.<br />PayU este un furnizor de servicii tehnice si nu se ocupa de litigiile legate de comenzi. Acestea trebuie sa fie rezolvate direct cu open.maxitours.be si/ sau banca dumneavoastra.<br />Mai multe informatii despre PayU:&nbsp;<a href="http://www.payu.ro" target="_blank"><strong>www.payu.ro</strong></a>.</p><p>&nbsp;</p><p><img style="float: left; height: 15px; margin-right: 10px;" src="images/logo_paypal.png" border="0" alt="" />Tranzactiile in EUR, USD, GBP, SEK efectuate pe open.maxitours.be sunt securizate de catre sistemul de plati PayPal (<a href="https://www.paypal.com/us/webapps/mpp/paypal-popup"><strong>https://www.paypal.com/us/webapps/mpp/paypal-popup</strong></a>) Se accepta plati prin Visa si Mastercard. Nu se accepta American Express. Toate informatiile schimbate pentru a procesa plata sunt criptate folosind protocolul SSL. Aceste date nu pot fi detectate, interceptate sau folosite de catre terti si nu sunt pastrate in sistemele noastre informatice.<br /> PayPal este un furnizor de servicii tehnice si nu se ocupa de litigiile legate de comenzi. Acestea trebuie sa fie rezolvate direct cu open.maxitours.be si/ sau banca dumneavoastra.<br /> Mai multe informatii despre PayPal:&nbsp;<a href="https://www.paypal.com/"><strong>https://www.paypal.com/</strong></a></p></span>
+        </td>
+    </tr>
+
+</table>
+<div style="border-top: solid 1px #EDEEEF; height: 2px; margin-top: 25px;"></div>
+<br />
+
+    </div>
+    
+            <div style="clear: both;">
+            </div>
+            
+        </div>
+        <div id="footerWrapper">
+            <div id="ctl00_CountriesMenu_divCountryMenu" class="container">
+	
+    <div class="chromestyle" id="chromemenu">
+        <ul id="ctl00_CountriesMenu_ulFooterCountryList">
+            
+                    <li>
+                        <a href='javascript:' class='dir'>BELGIA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/4_Bruxelles">Bruxelles</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>CIPRU</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/19_Larnaca">Larnaca</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>Danemarca</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/1116_Copenhaga">Copenhaga</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>FRANTA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/1115_Bordeaux">Bordeaux</a>
+                                
+                                    <a href="/Destinatii/21_Lyon">Lyon</a>
+                                
+                                    <a href="/Destinatii/46_Nisa">Nisa</a>
+                                
+                                    <a href="/Destinatii/15_Paris_(Beauvais)">Paris (Beauvais)</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>GERMANIA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/62_Berlin">Berlin</a>
+                                
+                                    <a href="/Destinatii/104_Hamburg">Hamburg</a>
+                                
+                                    <a href="/Destinatii/58_Koln">Koln</a>
+                                
+                                    <a href="/Destinatii/10_Stuttgart">Stuttgart</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>GRECIA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/92_Atena">Atena</a>
+                                
+                                    <a href="/Destinatii/75_Salonic">Salonic</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>Irlanda</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/59_Dublin">Dublin</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>Israel</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/83_Tel_Aviv">Tel Aviv</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>ITALIA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/109_Alghero">Alghero</a>
+                                
+                                    <a href="/Destinatii/93_Bari">Bari</a>
+                                
+                                    <a href="/Destinatii/14_Bologna">Bologna</a>
+                                
+                                    <a href="/Destinatii/35_Catania">Catania</a>
+                                
+                                    <a href="/Destinatii/91_Florenta">Florenta</a>
+                                
+                                    <a href="/Destinatii/66_Lamezia_Terme">Lamezia Terme</a>
+                                
+                                    <a href="/Destinatii/1113_Milano">Milano</a>
+                                
+                                    <a href="/Destinatii/85_Milano_(Bergamo)">Milano (Bergamo)</a>
+                                
+                                    <a href="/Destinatii/88_Milano_(Linate)">Milano (Linate)</a>
+                                
+                                    <a href="/Destinatii/34_Napoli">Napoli</a>
+                                
+                                    <a href="/Destinatii/112_Pescara">Pescara</a>
+                                
+                                    <a href="/Destinatii/18_Roma">Roma</a>
+                                
+                                    <a href="/Destinatii/87_Torino">Torino</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>MAREA BRITANIE</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/105_Birmingham">Birmingham</a>
+                                
+                                    <a href="/Destinatii/103_Glasgow">Glasgow</a>
+                                
+                                    <a href="/Destinatii/86_Liverpool">Liverpool</a>
+                                
+                                    <a href="/Destinatii/30_Londra_(Luton)">Londra (Luton)</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>Portugalia</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/20_Lisabona">Lisabona</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>ROMANIA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/6_Bacau">Bacau</a>
+                                
+                                    <a href="/Destinatii/73_Brasov_-_transfer">Brasov - transfer</a>
+                                
+                                    <a href="/Destinatii/70_Bucuresti">Bucuresti</a>
+                                
+                                    <a href="/Destinatii/84_Cluj-Napoca">Cluj-Napoca</a>
+                                
+                                    <a href="/Destinatii/90_Constanta">Constanta</a>
+                                
+                                    <a href="/Destinatii/56_Constanta_-_transfer">Constanta - transfer</a>
+                                
+                                    <a href="/Destinatii/82_Iasi">Iasi</a>
+                                
+                                    <a href="/Destinatii/1114_Oradea">Oradea</a>
+                                
+                                    <a href="/Destinatii/28_Sibiu">Sibiu</a>
+                                
+                                    <a href="/Destinatii/61_Timisoara">Timisoara</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>SPANIA</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/1117_Alicante">Alicante</a>
+                                
+                                    <a href="/Destinatii/9_Barcelona">Barcelona</a>
+                                
+                                    <a href="/Destinatii/102_Castellon">Castellon</a>
+                                
+                                    <a href="/Destinatii/74_Ibiza">Ibiza</a>
+                                
+                                    <a href="/Destinatii/22_Madrid">Madrid</a>
+                                
+                                    <a href="/Destinatii/7_Malaga">Malaga</a>
+                                
+                                    <a href="/Destinatii/107_Palma_de_Mallorca">Palma de Mallorca</a>
+                                
+                                    <a href="/Destinatii/1118_Sevilla">Sevilla</a>
+                                
+                                    <a href="/Destinatii/11_Valencia">Valencia</a>
+                                
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href='javascript:' class='dir'>Suedia</a>
+                        <div class="dropmenudiv">
+                            
+                                    <a href="/Destinatii/106_Stockholm">Stockholm</a>
+                                
+                        </div>
+                    </li>
+                
+        </ul>
+    </div>
+
+</div>
+
+        </div>
+        <div id="bottomMenu">
+            <img class="bottom-logo" alt="iata" src="https://www.blueairweb.com/images/iata.png" />
+            <img class="bottom-logo" alt="era" src="images/era-logo.jpg" />
+            <div class="content">
+                <a id="ctl00_hlnkOthersCarriageConditions" title="Conditii de calatorie" class="bottomMenu-link" href="http://www.blueairweb.com/Conditii-De-Calatorie/" target="_blank">Conditii de calatorie</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkOthersTermsAndConditions" title="Conditii de confidentialitate" class="bottomMenu-link" href="http://www.blueairweb.com/Termeni-Si-Conditii/" target="_blank">Conditii de confidentialitate</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkOthersCareers" title="Cariere" class="bottomMenu-link" href="http://www.blueairweb.com/Cariere/" target="_blank">Cariere</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkUtilInfosPress" title="Presa" class="bottomMenu-link" href="http://www.blueairweb.com/Informatii-Utile/Comunicate-De-Presa" target="_blank">Presa</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkUtilInfosNewsletter" title="Newsletter" class="bottomMenu-link" href="http://www.blueairweb.com/Informatii-Utile/Newsletter" target="_blank">Newsletter</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkOthersContact" title="Contact" class="bottomMenu-link" href="http://www.blueairweb.com/Contact-ro/" target="_blank">Contact</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkOthersOpinions" title="Opinii" class="bottomMenu-link" href="http://www.blueairweb.com/Opinii/" target="_blank">Opinii</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkOthersSitemap" title="Harta site-ului" class="bottomMenu-link" href="http://www.blueairweb.com/Harta-Site/" target="_blank">Harta site-ului</a>
+                &nbsp;|&nbsp;
+            <a id="ctl00_hlnkANPC" class="bottomMenu-link" href="http://www.anpc.gov.ro">A.N.P.C.</a>
+                <a title="Openmind Concept - web development si comunicare online, software development, planificare, strategie, campanii, project management si consultanta" target="_blank" href="http://www.openmind.ro" style="position: relative; top: 4px; left: 25px;">
+                    <img border="0" alt="Openmind Concept - web and software development, online strategy and consulting services - www.openmind.ro" src="images/layout/openmind_small.png"></a>
+            </div>
+        </div>
+        <div id="divModalMessage"></div>
+
+        <div id="ctl00_UpdateProgress1" style="display:none;">
+	
+                <div class="modalBackground" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; padding: 0; margin: 0; z-index: 1000;">
+                </div>
+                <div id="ctl00_divWait" class="divWait" style="z-index: 1001;">
+                    <table class="tblWait" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td align="center">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding-right: 5px;">
+                                            Va rugam asteptati
+                                        </td>
+                                        <td>
+                                            <img src="images/spinner.gif" class="spinner" alt="!">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            
+</div>
+        <div id="ctl00_updErrorMaster">
+	
+                <div id="ctl00_pnlErrorMaster" class="pnlError" style="z-index: 1002;">
+		
+                    
+                    <span id="ctl00_lblErrorMaster" class="red11"></span>
+                    <br />
+                    <a id="ctl00_btnOKMaster" class="loginButton" href="javascript:__doPostBack(&#39;ctl00$btnOKMaster&#39;,&#39;&#39;)"><span>OK</span></a>
+                
+	</div>
+                <input name="ctl00$hButton2Master" type="text" id="ctl00_hButton2Master" text="" style="display: none;" />
+                
+            
+</div>
+        
+
+<script type="text/javascript">
+//<![CDATA[
+OPENBOOKING.SelectFlight.setPaymentFees([{"FeeCode":"-1","FeeAmount":0,"FeeDetails":"\u003cp\u003eTariful afisat include toate taxele.\u003c/p\u003e\u003cp\u003ePentru achizitionarea biletelor de pe website prin Transfer Bancar, Depunere Numerar la Raiffeisen, Bancpost, BRD sau numerar la Paypoint, Rompay, Qiwi, Zebra, beneficiati de o reducere de 5 EUR/ pasager/ segment de zbor din pretul total al biletului\u003c/p\u003e\u003cp\u003eMai multe informatii despre modalitatile de plata puteti gasi \u003ca href=\"http://www.blueairweb.com/informatii-utile/ghid-de-calatorie\" target=\"_blank\"\u003eaici\u003c/a\u003e.\u003c/p\u003e"},{"FeeCode":"CP1","FeeAmount":0.0,"FeeDetails":"\u003cp\u003eTariful afisat include toate taxele.\u003c/p\u003e"},{"FeeCode":"CP3","FeeAmount":0.0,"FeeDetails":"\u003cp\u003eTariful afisat include toate taxele.\u003c/p\u003e"},{"FeeCode":"CP2","FeeAmount":0.0,"FeeDetails":"\u003cp\u003eTariful afisat include toate taxele.\u003c/p\u003e"},{"FeeCode":"CP4","FeeAmount":0.0,"FeeDetails":"\u003cp\u003eTariful afisat include toate taxele.\u003c/p\u003e"},{"FeeCode":"PL","FeeAmount":0.0,"FeeDetails":"Tranzactie din cont PayPal. Se accepta plati prin Visa si Mastercard. Nu se accepta American Express."},{"FeeCode":"AV","FeeAmount":0.0,"FeeDetails":"Tariful afisat include toate taxele."}]);Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"ctl00_ContentPlaceHolder1_BookingBox1_btnOK","PopupControlID":"ctl00_ContentPlaceHolder1_BookingBox1_pnlError","dynamicServicePath":"/SelectLowFare.aspx","id":"ctl00_ContentPlaceHolder1_BookingBox1_err_ModalPopupExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_BookingBox1_hButton2"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.AlwaysVisibleControlBehavior, {"HorizontalOffset":100,"HorizontalSide":1,"VerticalOffset":35,"VerticalSide":1,"id":"ctl00_AlwaysVisibleControlExtender1"}, null, null, $get("ctl00_divWait"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"ctl00_btnOKMaster","PopupControlID":"ctl00_updErrorMaster","dynamicServicePath":"/SelectLowFare.aspx","id":"ctl00_err_ModalPopupExtenderMaster"}, null, null, $get("ctl00_hButton2Master"));
+});
+//]]>
+</script>
+</form>
+    <script type="text/javascript">
+        function ShowMasterErrorMessage(msg) {
+            $("#ctl00_lblErrorMaster").html(msg);
+            $find('ctl00_vsGeneralMaster').hide();
+            $find('ctl00_err_ModalPopupExtenderMaster').show();
+        }
+        function ShowMasterErrorSummary(validationGroup) {
+            $("#ctl00_lblErrorMaster").hide();
+            $('#ctl00_vsGeneralMaster').show();
+            Page_ValidationSummaries[0].validationGroup = validationGroup
+            $find('ctl00_err_ModalPopupExtenderMaster').show();
+        }
+    </script>
+
+
+    <!-- (c) 2013 Gemius SA / gemiusHeatMap / blueair_ro -->
+    <script type="text/javascript">
+        var ghmxy_align = 'center';
+        var ghmxy_type = 'absolute';
+        var ghmxy_identifier = 'nLs7ycRl3Ccz9yWid.M_dcQKrqyWYxrAaFLqD.T893H.M7';
+        var ghmxy_hitcollector = 'ghmtr.hit.gemius.pl';
+    </script>
+    <script type="text/javascript" src="https://ghmtr.hit.gemius.pl/hmapxy.js"></script>
+
+    <!-- Google Code for Remarketing Tag -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 1021904236;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+        <div style="display: inline;">
+            <img height="1" width="1" style="border-style: none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1021904236/?value=0&amp;guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+    
+</body>
+</html>
