@@ -47,10 +47,16 @@ class ParsingTest extends \PHPUnit_Framework_TestCase
     public function testParseFlightsInfo()
     {
         $Scraper = new Scraper();
-        $ctr =   $Scraper->getFlightSearchResults(self::readFile('flight_results.html'));
+        $ctr =   $Scraper->parseFlightSearchResults(self::readFile('flight_results.html'));
 
         $this->assertCount(5, $ctr->outbound);
         $this->assertCount(5, $ctr->inbound);
+
+        $this->assertNotEmpty($ctr->outbound['2017-02-04']);
+        $this->assertNotEmpty($ctr->inbound['2017-02-09']);
+
+        $this->assertEquals(74.94, $ctr->outbound['2017-02-04'][0]->price_allpassengers->amount);
+        $this->assertEquals('EUR', $ctr->outbound['2017-02-04'][0]->price_allpassengers->currency);
 
         // make sure json dates are not datetime objects
         $json   =   \json_encode($ctr);
@@ -58,7 +64,6 @@ class ParsingTest extends \PHPUnit_Framework_TestCase
         $this->assertNotContains('timezone', $json);
         $this->assertNotContains('timezone_type', $json);
         // end json assert
-        echo $json;
     }
 
     public function testDecodeFlightSegments()
@@ -81,4 +86,30 @@ class ParsingTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('201702041630', $as_array[1]->departure->format('YmdHi'));
         $this->assertEquals('201702041745', $as_array[1]->arrival->format('YmdHi'));
     }
+
+    public function testParsePrice()
+    {
+        $price  =   '79,96 EUR';
+        $obj    =   FlightsContainer::parsePriceString($price);
+
+        $this->assertInternalType('object', $obj);
+        $this->assertObjectHasAttribute('amount', $obj);
+        $this->assertObjectHasAttribute('currency', $obj);
+        $this->assertEquals('EUR', $obj->currency);
+        $this->assertEquals(79.96, $obj->amount);
+    }
+
+    public function testParsePriceDecimal()
+    {
+        $price  =   '79.96 usd';
+        $obj    =   FlightsContainer::parsePriceString($price);
+
+        $this->assertInternalType('object', $obj);
+        $this->assertObjectHasAttribute('amount', $obj);
+        $this->assertObjectHasAttribute('currency', $obj);
+        $this->assertEquals('USD', $obj->currency);
+        $this->assertEquals(79.96, $obj->amount);
+    }
+
+
 }

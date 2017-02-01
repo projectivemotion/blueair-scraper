@@ -20,10 +20,20 @@ class FlightsContainer
         $direction[$datestr]    =   [];
 
         return $direction[$datestr];
-//        array_push($this->$direction, $foo);
     }
 
-    public function addFlight($directionstr, $segments, $data)
+    public static function parsePriceString($priceString)
+    {
+        if(!preg_match('#(\d+).(\d+)\W*(\D+)#', utf8_decode($priceString), $m))
+            throw new Exception('unable to parse price.');
+
+        return (object)[
+            'amount'    => 1*"$m[1].$m[2]",
+            'currency'  =>  strtoupper($m[3])
+        ];
+    }
+
+    public function addFlight($directionstr, $segments, $prices)
     {
         $direction = &$this->$directionstr;
 
@@ -36,8 +46,7 @@ class FlightsContainer
         if(!isset($direction[$departure_datestr]))
             $direction[$departure_datestr]    =   [];
 
-
-        $direction[$departure_datestr][]    =   new Flight($data +    [
+        $direction[$departure_datestr][]    =   new Flight($prices +    [
                 'departure' =>  $departure_date,
                 'arrival'   =>  $arrival_date,
                 'segments'  => $segments

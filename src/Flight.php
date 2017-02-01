@@ -29,10 +29,12 @@ class Flight extends \ArrayObject implements \JsonSerializable
      */
     function jsonSerialize()
     {
-        if(count($this) == 0)
-            return $this->getArrayCopy();
 
         $clone  =   $this->getArrayCopy();
+
+        if(count($this) == 0)
+            return $clone;
+
         $clone['departure'] =   $this['departure']->format('Y-m-d H:i:00');
         $clone['arrival'] =   $this['arrival']->format('Y-m-d H:i:00');
         return $clone;
