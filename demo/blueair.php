@@ -19,8 +19,4 @@ $query->setNumAdults(2);
 
 $response = $Scraper->getFlights($query);
 
-
-//array_walk()
-//print_r($response);
-
 echo \json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
