@@ -51,6 +51,14 @@ class ParsingTest extends \PHPUnit_Framework_TestCase
 
         $this->assertCount(5, $ctr->outbound);
         $this->assertCount(5, $ctr->inbound);
+
+        // make sure json dates are not datetime objects
+        $json   =   \json_encode($ctr);
+
+        $this->assertNotContains('timezone', $json);
+        $this->assertNotContains('timezone_type', $json);
+        // end json assert
+        echo $json;
     }
 
     public function testDecodeFlightSegments()
@@ -68,9 +76,9 @@ class ParsingTest extends \PHPUnit_Framework_TestCase
             $this->assertEquals('TRN', $as_array[1]->origin);
             $this->assertEquals('TRN', $as_array[0]->destination);
         $this->assertEquals('FCO', $as_array[1]->destination);
-        $this->assertEquals('201702041010', $as_array[0]->departure_date->format('YmdHi'));
-        $this->assertEquals('201702041150', $as_array[0]->arrival_date->format('YmdHi'));
-        $this->assertEquals('201702041630', $as_array[1]->departure_date->format('YmdHi'));
-        $this->assertEquals('201702041745', $as_array[1]->arrival_date->format('YmdHi'));
+        $this->assertEquals('201702041010', $as_array[0]->departure->format('YmdHi'));
+        $this->assertEquals('201702041150', $as_array[0]->arrival->format('YmdHi'));
+        $this->assertEquals('201702041630', $as_array[1]->departure->format('YmdHi'));
+        $this->assertEquals('201702041745', $as_array[1]->arrival->format('YmdHi'));
     }
 }

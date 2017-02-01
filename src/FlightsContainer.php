@@ -29,15 +29,15 @@ class FlightsContainer
 
         $departure_segment = current($segments);
         $arrival_segment    =   end($segments);
-        $departure_date =   $departure_segment->departure_date;
-        $arrival_date   =   $arrival_segment->arrival_date;
+        $departure_date =   $departure_segment->departure;
+        $arrival_date   =   $arrival_segment->arrival;
         $departure_datestr  =   $departure_date->format('Y-m-d');
 
         if(!isset($direction[$departure_datestr]))
             $direction[$departure_datestr]    =   [];
 
 
-        $direction[$departure_datestr][]    =   (object)($data +    [
+        $direction[$departure_datestr][]    =   new Flight($data +    [
                 'departure' =>  $departure_date,
                 'arrival'   =>  $arrival_date,
                 'segments'  => $segments
@@ -50,14 +50,14 @@ class FlightsContainer
         foreach($segments as $segment){
             if(!preg_match('/^(.*)~(.*)~ ~~(.*)~(.*)~(.*)~(.*)~~$/', $segment, $matches))
                 throw new Exception('unable to parse segment '. $segment);
-            $segmentparsed  =   (object)[
+            $segmentparsed  =   new Flight([
                 'operator'  => $matches[1],
                 'number'  => $matches[2],
                 'origin'  => $matches[3],
                 'destination'  => $matches[5],
-                'departure_date'    => date_create_from_format('m/d/Y H:i', $matches[4]),
-                'arrival_date'  => date_create_from_format('m/d/Y H:i', $matches[6]),
-            ];
+                'departure'    => date_create_from_format('m/d/Y H:i', $matches[4]),
+                'arrival'  => date_create_from_format('m/d/Y H:i', $matches[6]),
+            ]);
             yield $segmentparsed;
         }
     }

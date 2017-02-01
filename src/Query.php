@@ -25,6 +25,37 @@ class Query
      */
     protected $num_adults;
 
+    /**
+     * @var string
+     */
+    protected $origin;
+
+    /**
+     * @var string
+     */
+    protected $destination;
+
+
+    public function setDestination($destination)
+    {
+        $this->destination = $destination;
+    }
+
+    public function setOrigin($origin)
+    {
+        $this->origin = $origin;
+    }
+
+    public function getDestination()
+    {
+        return $this->destination;
+    }
+
+    public function getOrigin()
+    {
+        return $this->origin;
+    }
+
     public function setDepartDate(\DateTime $depart_date)
     {
         $this->depart_date = $depart_date;
@@ -65,10 +96,10 @@ class Query
             '__VIEWSTATEGENERATOR' => 'CA0B0334',
             'ctl00$txtSearch' => '',
             'ctl00$ContentPlaceHolder1$BookingBox1$TripType' => 'rdoRoundTrip',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtFrom' => 'Berlin - Tegel',
-            'ctl00$ContentPlaceHolder1$BookingBox1$hfFrom' => 'TXL',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtTo' => 'Rome - Fiumicino Terminal 2',
-            'ctl00$ContentPlaceHolder1$BookingBox1$hfTo' => 'FCO',
+            'ctl00$ContentPlaceHolder1$BookingBox1$hfFrom' => $this->getOrigin(), //'TXL',
+            'ctl00$ContentPlaceHolder1$BookingBox1$hfTo' => $this->getDestination(), //'FCO',
+            'ctl00$ContentPlaceHolder1$BookingBox1$txtFrom' => '', //'Berlin - Tegel',
+            'ctl00$ContentPlaceHolder1$BookingBox1$txtTo' => '', //'Rome - Fiumicino Terminal 2',
             'ctl00$ContentPlaceHolder1$BookingBox1$txtDepartureDate' => $this->getDepartDate('d.m.Y'),
             'ctl00$ContentPlaceHolder1$BookingBox1$txtReturnDate' => $this->getReturnDate('d.m.Y'),
             'ctl00$ContentPlaceHolder1$BookingBox1$ddlAdult' => $this->getNumAdults(),
@@ -94,47 +125,6 @@ class Query
             'ctl00$hButton2Master' => '',
             '__ASYNCPOST' => 'true',
         );
-
-//        $post = [];
-//        foreach($data as $key => $item){
-//            $post[urldecode($key)]  =   urldecode($item);
-//        }
-
-        return $post;
-
-        $post   =   [
-            'ctl00$ScriptManager1' => 'ctl00$ContentPlaceHolder1$updLeftWrapper|ctl00$ContentPlaceHolder1$BookingBox1$btnSearchFlights',
-            'ctl00$txtSearch' => '',
-            'ctl00$ContentPlaceHolder1$BookingBox1$TripType' => 'rdoRoundTrip',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtFrom' => 'Berlin - Tegel',
-            'ctl00$ContentPlaceHolder1$BookingBox1$hfFrom' => 'TXL',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtTo' => 'Rome - Fiumicino Terminal 2',
-            'ctl00$ContentPlaceHolder1$BookingBox1$hfTo' => 'FCO',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtDepartureDate' => '04.02.2017',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtReturnDate' => '11.02.2017',
-            'ctl00$ContentPlaceHolder1$BookingBox1$ddlAdult' => '1',
-            'ctl00$ContentPlaceHolder1$BookingBox1$ddlChildren' => '0',
-            'ctl00$ContentPlaceHolder1$BookingBox1$ddlInfant' => '0',
-            'ctl00$ContentPlaceHolder1$BookingBox1$ddlCurrency' => 'EUR',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtConfirmationNumber1' => '',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtContactEmail' => '',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtConfirmationNumber2' => '',
-            'ctl00$ContentPlaceHolder1$BookingBox1$txtLastName' => '',
-            'ctl00$ContentPlaceHolder1$BookingBox1$hButton2' => '',
-            'ctl00$ContentPlaceHolder1$TripType' => 'rdoRoundTrip',
-            'ctl00$ContentPlaceHolder1$txtFrom' => 'Select...',
-            'ctl00$ContentPlaceHolder1$hfFrom' => '',
-            'ctl00$ContentPlaceHolder1$txtTo' => 'Select...',
-            'ctl00$ContentPlaceHolder1$hfTo' => '',
-            'ctl00$ContentPlaceHolder1$txtDepartureDate' => '04.02.2017',
-            'ctl00$ContentPlaceHolder1$txtReturnDate' => '11.02.2017',
-            'ctl00$ContentPlaceHolder1$ddlAdult' => '1',
-            'ctl00$ContentPlaceHolder1$ddlChildren' => '0',
-            'ctl00$ContentPlaceHolder1$ddlInfant' => '0',
-            'ctl00$ContentPlaceHolder1$ddlCurrency' => 'EUR',
-            'ctl00$hButton2Master' => '',
-            '__ASYNCPOST'=>'true'
-        ];
 
         return $post;
     }
